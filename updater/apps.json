@@ -67,7 +67,7 @@
       "id": "berk-system",
       "install_dir": "/opt/berk-system",
       "menu_name": "Berk system",
-      "repo": "aeon-os-berk",
+      "repo": "project-berk",
       "sums_asset": "SHA256SUMS",
       "type": "system",
       "version_file": "/opt/berk-system/version.txt"

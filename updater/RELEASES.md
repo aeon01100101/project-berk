@@ -29,7 +29,7 @@ contains exactly: `harden-mint.sh`, `apply-ux.sh`, `version.txt`.
    organization name. That is the only place it appears.
 2. Create one repository per app, named as the `repo` field says
    (`aeonradio`, `aeoncodenet`, `aeonphoto`, `aeonobj`, `aeoncraft`,
-   `enigma-launcher`, plus `aeon-os-berk` for the system layer).
+   `enigma-launcher`, plus `project-berk` for the system layer).
 
 ## Shipping an app update (every time)
 
@@ -71,7 +71,7 @@ tar -czf updater/debs/berk-system_1.3.0.tar.gz -C /tmp/sysrel \
     harden-mint.sh apply-ux.sh version.txt
 cd updater/debs
 sha256sum berk-system_1.3.0.tar.gz > SHA256SUMS
-# attach both files to a new release tagged v1.3.0 in the aeon-os-berk repo
+# attach both files to a new release tagged v1.3.0 in the project-berk repo
 ```
 
 On the machine, the updater downloads the tarball, checks the hash, then
