@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AeonPhoto</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="appbar">
+  <div class="brand">AeonPhoto</div>
+  <nav class="tabs">
+    <button class="tab active" data-tab="create">Create</button>
+    <button class="tab" data-tab="gallery">Gallery</button>
+    <button class="tab" data-tab="backend">Backend</button>
+  </nav>
+  <div id="backend-pill" class="pill pill-none" title="Local diffusion backend status">backend: …</div>
+</header>
+
+<main>
+  <!-- CREATE -->
+  <section id="tab-create" class="tabpage active">
+    <h1>AeonPhoto</h1>
+    <p class="muted">On-device diffusion. Nothing you type or generate ever leaves this machine.</p>
+
+    <div id="no-backend-card" class="card warn" hidden>
+      <strong>No diffusion backend found</strong>
+      <p class="muted">AeonPhoto needs a local image-generation backend. Nothing will be
+      generated until one is running — the Generate button stays disabled.</p>
+      <button id="goto-backend" class="btn">Open Backend setup</button>
+    </div>
+
+    <label class="field-label" for="prompt">Describe the image…</label>
+    <textarea id="prompt" rows="3" placeholder="a lighthouse at dusk, waves crashing"></textarea>
+
+    <div class="field-label">Style</div>
+    <div id="style-chips" class="chips"></div>
+
+    <div class="field-label">Shape</div>
+    <div id="shape-chips" class="chips"></div>
+
+    <button id="advanced-toggle" class="linkbtn">Advanced settings</button>
+    <div id="advanced" hidden>
+      <div class="field-label">Steps: <span id="steps-val">20</span></div>
+      <input id="steps" type="range" min="10" max="50" step="1" value="20">
+      <p class="muted small">The local backend generates at 1024×1024. Non-square shapes are
+      center-cropped from the square output — never stretched.</p>
+      <div class="seedrow">
+        <div class="seedfield">
+          <div class="field-label">Seed</div>
+          <input id="seed" type="text" inputmode="numeric">
+        </div>
+        <button id="dice" class="btn secondary" title="Random seed">🎲</button>
+      </div>
+    </div>
+
+    <p id="error" class="error" hidden></p>
+
+    <button id="generate-btn" class="btn primary big" disabled>Generate image</button>
+    <div id="progress-wrap" hidden>
+      <div class="progress"><div id="progress-bar"></div></div>
+      <p id="progress-msg" class="muted small"></p>
+    </div>
+
+    <div id="result" hidden>
+      <h2>Result</h2>
+      <img id="result-img" alt="Generated image">
+      <div class="row">
+        <button id="result-save" class="btn secondary">Save image…</button>
+        <button id="result-copy" class="btn secondary">Copy to clipboard</button>
+      </div>
+      <p id="result-meta" class="muted small"></p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="tab-gallery" class="tabpage">
+    <div class="row space">
+      <h1>Gallery</h1>
+      <button id="open-folder" class="btn secondary">Open folder</button>
+    </div>
+    <div id="gallery-grid" class="grid"></div>
+    <p id="gallery-empty" class="muted center">Nothing generated yet.</p>
+  </section>
+
+  <!-- BACKEND -->
+  <section id="tab-backend" class="tabpage">
+    <h1>Backend</h1>
+    <div class="card">
+      <div class="row space">
+        <div>
+          <div class="field-label">Status</div>
+          <div id="backend-label" class="backend-label">Checking…</div>
+          <p id="backend-detail" class="muted small"></p>
+        </div>
+        <button id="check-again" class="btn">Check again</button>
+      </div>
+    </div>
+
+    <div id="backend-setup" class="card" hidden>
+      <h2>Set up a local backend</h2>
+      <p>AeonPhoto generates images 100% locally. Pick <strong>one</strong> of these,
+      start it, then press <strong>Check again</strong>.</p>
+
+      <h3>Option A — stable-diffusion.cpp server (recommended, lightest)</h3>
+      <ol>
+        <li>Get the <code>sd-server</code> binary: download a release from
+          <code>github.com/leejet/stable-diffusion.cpp</code>, or build from source
+          (<code>cmake -B build -DSD_SERVER_BUILD_FRONTEND=OFF &amp;&amp; cmake --build build --target sd-server</code>).</li>
+        <li>Download an SD 1.5 model (~4 GB, CreativeML Open&nbsp;RAIL&#8209;M license).
+          This app ships a <code>download-model.sh</code> helper that fetches
+          <code>v1-5-pruned-emaonly.safetensors</code> from Hugging Face with resumable curl.</li>
+        <li>Start the server (default port 1234):
+          <code>sd-server -m /path/to/model.safetensors --listen-ip 127.0.0.1 --listen-port 1234</code></li>
+      </ol>
+
+      <h3>Option B — Stable Diffusion WebUI API</h3>
+      <ol>
+        <li>Install <code>stable-diffusion-webui</code> and launch it with the API flag:
+          <code>./webui.sh --api</code> (serves <code>http://127.0.0.1:7860</code>).</li>
+        <li>AeonPhoto uses <code>POST /sdapi/v1/txt2img</code> — no extra configuration needed.</li>
+      </ol>
+
+      <p class="muted small">AeonPhoto never uploads your prompts or images anywhere.
+      If you already have one of these running on a different port, set
+      <code>AEONPHOTO_SDCPP_URL</code> or <code>AEONPHOTO_WEBUI_URL</code> before launching.</p>
+    </div>
+
+    <div id="backend-ok-note" class="card ok" hidden>
+      <strong>Backend connected.</strong>
+      <p class="muted">Generation runs locally through the detected backend.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Gallery detail modal -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <h3 id="modal-title"></h3>
+    <img id="modal-img" alt="">
+    <p id="modal-meta" class="muted small"></p>
+    <div class="row">
+      <button id="modal-save" class="btn secondary">Save image…</button>
+      <button id="modal-copy" class="btn secondary">Copy to clipboard</button>
+      <button id="modal-delete" class="btn danger">Delete</button>
+      <button id="modal-close" class="btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

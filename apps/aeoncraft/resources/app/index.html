@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AeonCraft</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="game"></div>
+
+<!-- In-game HUD -->
+<div id="hud" class="hidden">
+  <div id="crosshair">+</div>
+  <div id="hearts"></div>
+  <div id="armor" class="hidden"></div>
+  <div id="hotbar"></div>
+  <div id="selname"></div>
+  <div id="debug" class="hidden"></div>
+  <div id="hint" class="hidden"></div>
+</div>
+<div id="dmg"></div>
+
+<!-- Title screen -->
+<div id="title" class="screen">
+  <div class="panel">
+    <div class="logo">⛏</div>
+    <h1>AeonCraft</h1>
+    <p class="sub">An original fan-made voxel sandbox. No Mojang code, no Mojang assets.</p>
+    <label>World name <input id="world-name" maxlength="40" placeholder="My World"></label>
+    <label>Seed <input id="world-seed" maxlength="20" placeholder="(random)"></label>
+    <div class="row">
+      <button id="btn-play" class="primary">Play</button>
+      <button id="btn-import-title">Import world file…</button>
+    </div>
+    <p class="foot">Offline-first · zero telemetry · worlds save locally</p>
+  </div>
+</div>
+
+<!-- Pause menu -->
+<div id="pause" class="screen hidden">
+  <div class="panel">
+    <h2>Paused</h2>
+    <div class="col">
+      <button id="btn-resume" class="primary">Back to game</button>
+      <button id="btn-save">Save world</button>
+      <button id="btn-export">Export world file…</button>
+      <button id="btn-import">Import world file…</button>
+      <button id="btn-quit">Quit to title</button>
+    </div>
+    <p class="foot" id="pause-msg"></p>
+  </div>
+</div>
+
+<!-- Help overlay -->
+<div id="help" class="screen hidden">
+  <div class="panel">
+    <h2>Controls</h2>
+    <table>
+      <tr><td>W A S D</td><td>Move</td></tr>
+      <tr><td>Mouse</td><td>Look (click the game to capture)</td></tr>
+      <tr><td>Left click</td><td>Hit mob / <b>hold</b> to mine a block (cracks show progress)</td></tr>
+      <tr><td>Right click</td><td>Place block (on Crafting Table: open it)</td></tr>
+      <tr><td>E</td><td>Crafting (2x2 grid + inventory) · armor slots · gear list</td></tr>
+      <tr><td>Tools</td><td>Craft at a table: pick (stone), axe (wood), spade (dirt), blade (mobs)</td></tr>
+      <tr><td>Armor</td><td>Equip in the E menu: bark 4%/piece, rockplate 8%/piece (cap 60%)</td></tr>
+      <tr><td>Space</td><td>Jump / fly up</td></tr>
+      <tr><td>Shift</td><td>Fly down</td></tr>
+      <tr><td>F</td><td>Toggle fly</td></tr>
+      <tr><td>1–9, 0</td><td>Select block</td></tr>
+      <tr><td>Wheel</td><td>Cycle blocks</td></tr>
+      <tr><td>Esc</td><td>Pause / close crafting</td></tr>
+      <tr><td>H</td><td>This help</td></tr>
+      <tr><td>F3</td><td>Debug info</td></tr>
+      <tr><td colspan="2" style="text-align:center;color:var(--muted)">Mobs: Skitters hop away, Nippers chase — watch your hearts!</td></tr>
+    </table>
+    <button id="btn-help-close" class="primary">Close</button>
+  </div>
+</div>
+
+<input type="file" id="import-file" accept=".json,application/json" class="hidden">
+
+<!-- Crafting overlay -->
+<div id="craft" class="screen hidden">
+  <div class="panel craft-panel">
+    <h2 id="craft-title">Crafting</h2>
+    <div class="craft-cols">
+      <div class="craft-left">
+        <div id="craft-grid" class="cgrid"></div>
+        <div class="craft-row">
+          <div id="craft-arrow">➜</div>
+          <div id="craft-result" class="cslot result" title="Result — click to take"></div>
+          <button id="btn-craft-clear">Clear</button>
+        </div>
+      </div>
+      <div class="craft-right">
+        <div class="craft-label">Inventory — click an item to hold it, then click a grid cell</div>
+        <div id="craft-inv" class="invlist"></div>
+        <div id="craft-held">Holding: none</div>
+        <div class="craft-label">Armor — click a stashed piece to equip, click a worn piece to remove</div>
+        <div id="armor-slots" class="armor-row"></div>
+        <div id="armor-val" class="craft-label"></div>
+        <div class="craft-label">Tools & spare armor</div>
+        <div id="gear-list" class="invlist gearlist"></div>
+      </div>
+    </div>
+    <button id="btn-craft-close" class="primary">Done (E)</button>
+  </div>
+</div>
+
+<script src="vendor/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,1311 @@
+{
+ "70s": [
+  {
+   "name": "Ретро FM 70e",
+   "url": "http://retro70.hostingradio.ru:8025/retro70-128.mp3",
+   "favicon": "",
+   "tags": "70s",
+   "country": "The Russian Federation",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Heart 70s",
+   "url": "https://media-ssl.musicradio.com/Heart70sMP3",
+   "favicon": "",
+   "tags": "70s,national,pop,public radio,variety",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Virgin Radio Rock '70",
+   "url": "http://icy.unitedradio.it/VirginRock70.mp3",
+   "favicon": "",
+   "tags": "70s,classic rock,mediaset",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "181.FM - Super 70s",
+   "url": "http://listen.181fm.com/181-70s_128k.mp3",
+   "favicon": "http://www.181.fm/favicon.ico",
+   "tags": "70s,waynesboro",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "- 0 N - 70s on Radio",
+   "url": "https://0n-70s.radionetz.de/0n-70s.mp3",
+   "favicon": "https://www.0nradio.com/logos/0n-70s_600x600.jpg",
+   "tags": "70er,70s,oldies,pop",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "70s 80s Disco Funk ModernSoul Boogie",
+   "url": "https://discofunk.streamingmedia.it/usa",
+   "favicon": "",
+   "tags": "1970s,1980s,70's,70er,70s,70s disco,80,80's,80er,80s,boogie,funk",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 192
+  }
+ ],
+ "60s": [
+  {
+   "name": "- 0 N - 60s on Radio",
+   "url": "https://0n-60s.radionetz.de/0n-60s.mp3",
+   "favicon": "https://www.0nradio.com/logos/0n-60s_600x600.jpg",
+   "tags": "60er,60s,funk,oldies,pop,rock 'n' roll,soul,twist",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Chante France 60's",
+   "url": "http://stream.chantefrance.com/cf-60",
+   "favicon": "https://bocir-prod-bucket.s3.eu-west-1.amazonaws.com/radios/chante-france/images/favicon.x-icon",
+   "tags": "60s",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio Italia Anni 60 - Trentino Alto Adige",
+   "url": "http://ice10.fluidstream.net/anni60tn.aac",
+   "favicon": "http://www.radioitaliaanni60.it/templates/enar/images/favicon/apple-touch-icon-120x120.png",
+   "tags": "60s,70s,80s,90s,trento",
+   "country": "Italy",
+   "codec": "AAC",
+   "bitrate": 64
+  },
+  {
+   "name": "Nostalgie New York",
+   "url": "http://c32.radioboss.fm:8139/stream",
+   "favicon": "https://demigod-assets.sgp1.cdn.digitaloceanspaces.com/landingpages/fatcai/faviconcai.webp",
+   "tags": "60s,70s,80s,90s,classic hits,classic rock,disco,music,nostalgie,pop,rock and roll,smooth jazz,world music,worlds best cl",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Laut.FM 1000 Oldies",
+   "url": "http://1000oldies.stream.laut.fm/1000oldies?t302=2018-01-16_15-40-29&uuid=37780fea-d865-4439-9a4a-66f3ec1715a0",
+   "favicon": "http://1000oldies.de/apple-icon-120x120.png",
+   "tags": "50s,60s,70s,80s,oldies,pop,rock",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Super Clásica",
+   "url": "http://77.73.69.238:8000/stream",
+   "favicon": "http://cdn-radiotime-logos.tunein.com/s161501q.png",
+   "tags": "60s,70s,80s,baladas en español,musica romantica,romantic",
+   "country": "Colombia",
+   "codec": "MP3",
+   "bitrate": 56
+  }
+ ],
+ "50s": [
+  {
+   "name": "1.FM - Back To The 50's & 60's Radio",
+   "url": "http://strm112.1.fm/60s_70s_mobile_mp3",
+   "favicon": "",
+   "tags": "50s,60s",
+   "country": "Switzerland",
+   "codec": "MP3",
+   "bitrate": 256
+  },
+  {
+   "name": "Scott Shannon's True Oldies Channel",
+   "url": "http://streaming.live365.com/b92108_128mp3",
+   "favicon": "https://trueoldieschannel.com/wp-content/uploads/2019/02/apple-icon-120x120.png",
+   "tags": "1950s,1960s,1970s,50s,60s,70s,oldies",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "SOUL RADIO Only Classic Soul",
+   "url": "https://listen.soulradio.uk/uk",
+   "favicon": "",
+   "tags": "50s,60s,70s,classic soul,oldies,soul",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "AAC+",
+   "bitrate": 192
+  },
+  {
+   "name": "50s 60s RETRO HITS",
+   "url": "https://stream.zeno.fm/pxzwykxbluitv",
+   "favicon": "https://static.wixstatic.com/media/f361b3_ea9b293c1b80488d97f24981e7c6c1d3~mv2.jpg",
+   "tags": "50s,60s,classic hits,classic rock,community radio,fm,hits,music,news,oldies,pop,pop rock,public radio,radio,retro,retro",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "RocaFM Clasicos Caracas",
+   "url": "http://protostar.shoutca.st:8370/",
+   "favicon": "",
+   "tags": "50s,60s,70s,80s,90s,golden,golden oldies,goldies,oldies,venezuela",
+   "country": "Bolivarian Republic Of Venezuela",
+   "codec": "MP3",
+   "bitrate": 320
+  },
+  {
+   "name": "laut.fm Sound",
+   "url": "http://stream.laut.fm/sound",
+   "favicon": "",
+   "tags": "20s,30s,40s,50s,60s,70s,americana,classic country,classic folk,country,country blues,country rock,folk,folk rock,old tim",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "40s": [
+  {
+   "name": "1940s Radio HS - Pumpkin FM",
+   "url": "https://cast2.asurahosting.com/proxy/1940sradio/stream",
+   "favicon": "",
+   "tags": "1930s,1940s,1950s,40s,50s,big band,big bands,music from the 1940s,old time radio,swing,ww2",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "ROKiT Radio : 1940s Radio",
+   "url": "http://streaming06.liveboxstream.uk:8256/stream",
+   "favicon": "https://rokitradio.com/images/channels/1940s.jpg",
+   "tags": "1940s,old time radio,otr",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 48
+  },
+  {
+   "name": "1940sRadio",
+   "url": "http://uk3.internet-radio.com:8082/live",
+   "favicon": "https://1940sradio.com/images/logos/1940s-Radio-Logo-Blue.png",
+   "tags": "big band,crooners,jazz,music from the 1940s",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "The UK 1940s Radio Station",
+   "url": "http://solid2.streamupsolutions.com:24929/stream",
+   "favicon": "https://bhfr.co.uk/favicon.png",
+   "tags": "20s,30s,40s,50s,big band,blues,jazz,swing",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "M4D Radio 40s",
+   "url": "https://s2.radio.co/sf0e4f0fe8/listen",
+   "favicon": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4dradiologo.png",
+   "tags": "",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Australian Digital Radio Network - 1940s (MP3)",
+   "url": "http://abm21.com.au:8000/CONTAINER100",
+   "favicon": "",
+   "tags": "1940s,oldies",
+   "country": "Australia",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "30s": [
+  {
+   "name": "Australian Digital Radio Network - 1930s (MP3)",
+   "url": "http://abm21.com.au:8000/CONTAINER99",
+   "favicon": "http://www.australiandigitalradio.com/favicon.ico",
+   "tags": "1930s,oldies",
+   "country": "Australia",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "The 1920s Radio Network - Primary Music Service",
+   "url": "http://65.108.124.70:8181/stream",
+   "favicon": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop,q=95/y7FC5CJLt7n6tUCg/square-1920s-logo-2200-by-2200-wiGmDRrgr7E7j3gv.png",
+   "tags": "",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "The 1920s Radio Network - Old Time Radio Service",
+   "url": "http://65.108.105.26:8516/stream",
+   "favicon": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop,q=95/y7FC5CJLt7n6tUCg/square-1920s-logo-2200-by-2200-wiGmDRrgr7E7j3gv.png",
+   "tags": "otr",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "The 1920s Radio Network",
+   "url": "http://radio.garden/api/ara/content/listen/ZVbxD0Wt/channel.mp3?1710596542258",
+   "favicon": "https://the1920snetwork.com/wordpress/wp-content/uploads/2021/05/LogoMakr-4JHHgj-266x300.png",
+   "tags": "",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 192
+  }
+ ],
+ "Chinese": [
+  {
+   "name": "华语金曲500首",
+   "url": "http://ls.qingting.fm/live/3412131.m3u8?bitrate=64",
+   "favicon": "",
+   "tags": "golden music",
+   "country": "China",
+   "codec": "UNKNOWN",
+   "bitrate": 64
+  },
+  {
+   "name": "凤凰卫视资讯台",
+   "url": "http://playtv-live.ifeng.com/live/06OLEEWQKN4_audio.m3u8",
+   "favicon": "http://d.ifengimg.com/w250_h160_q90_webp/x0.ifengimg.com/ucms/2021_23/4F53E3FD6DBDAF0374F35223C9F6316706F6A08F_size23_w250_h160.jpg",
+   "tags": "news",
+   "country": "China",
+   "codec": "UNKNOWN",
+   "bitrate": 0
+  },
+  {
+   "name": "CNR-1 中国之声",
+   "url": "https://lhttp.qtfm.cn/live/15318317/64k.mp3",
+   "favicon": "",
+   "tags": "news",
+   "country": "China",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "怀集音乐之声",
+   "url": "https://lhttp.qingting.fm/live/4804/64k.mp3",
+   "favicon": "http://www.hj0758.cn/favicon.ico",
+   "tags": "music",
+   "country": "China",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "清晨音乐台",
+   "url": "http://lhttp.qingting.fm/live/4915/64k.mp3",
+   "favicon": "https://h5.sinaimg.cn/m/weibo-lite/appicon.png",
+   "tags": "music,pop music",
+   "country": "China",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "CNR-2 经济之声",
+   "url": "http://ngcdn002.cnr.cn/live/jjzs/index.m3u8",
+   "favicon": "",
+   "tags": "economic,news",
+   "country": "China",
+   "codec": "UNKNOWN",
+   "bitrate": 0
+  }
+ ],
+ "Russian": [
+  {
+   "name": "Europa Plus",
+   "url": "http://ep256.hostingradio.ru:8052/europaplus256.mp3",
+   "favicon": "http://liveam.tv/img/2494.jpg",
+   "tags": "dance,house,pop",
+   "country": "The Russian Federation",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "ROCK FM",
+   "url": "http://nashe1.hostingradio.ru/rock-128.mp3",
+   "favicon": "https://lh3.googleusercontent.com/D3taObR7tfyhwDFY40VS8DIVri7iif5RuzI9C-mXxRwF41vGZ_dO_n6MWM57P-mZczFC=w300",
+   "tags": "classic rock,pop rock,rock",
+   "country": "The Russian Federation",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "Ретро FM",
+   "url": "http://retroserver.streamr.ru:8043/retro256.mp3",
+   "favicon": "",
+   "tags": "classic hits,moscow,music,pop,retro,russia,russian pop",
+   "country": "The Russian Federation",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "DFM Дискач 90-х",
+   "url": "https://dfm-disc90.hostingradio.ru/disc9096.aacp",
+   "favicon": "",
+   "tags": "90-е,eurodance,nostalgia",
+   "country": "The Russian Federation",
+   "codec": "AAC+",
+   "bitrate": 96
+  },
+  {
+   "name": "Вести ФМ (Vesti FM)",
+   "url": "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps",
+   "favicon": "",
+   "tags": "news",
+   "country": "The Russian Federation",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "РАДИО ВАНЯ",
+   "url": "https://icecast-radiovanya.cdnvideo.ru/radiovanya",
+   "favicon": "",
+   "tags": "pop",
+   "country": "The Russian Federation",
+   "codec": "AAC+",
+   "bitrate": 64
+  }
+ ],
+ "Japanese": [
+  {
+   "name": "Listen.Moe JPop Vorbis",
+   "url": "https://listen.moe/stream",
+   "favicon": "https://listen.moe/favicon.ico",
+   "tags": "jpop",
+   "country": "Japan",
+   "codec": "OGG",
+   "bitrate": 192
+  },
+  {
+   "name": "R/a/dio",
+   "url": "https://relay0.r-a-d.io/main.mp3",
+   "favicon": "http://r-a-d.io/assets/images/logo_image_small.png",
+   "tags": "anime,jpop",
+   "country": "Japan",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "J1 Gold (HTTP)",
+   "url": "http://jenny.torontocast.com:8062/",
+   "favicon": "",
+   "tags": "jpop",
+   "country": "Japan",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Anime Para Ti",
+   "url": "https://stream.zeno.fm/qpn8mkt8c4duv",
+   "favicon": "https://images.zeno.fm/TrBD3tEtOJbMAdKu3XR64pWUT2XTjBhzgn2n2w_lFnE/rs:fit:500:500/g:ce:0:0/aHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2FneHpmbnBsYm04dGMzUmhkSE55TWdzU0NrRjFkR2hEYkdsbGJuUVlnSUNBeF92bDF3b01DeElPVTNSaGRHbHZibEJ5YjJacGJHVVlnSUNBZ0lEeWlBb01vZ0VFZW1WdWJ3L2ltYWdlLz9yZXNpemU9NTAweDUwMCZ1cGRhdGVkPTE2NjI3NzM0MjEwMDA.webp",
+   "tags": "anime,anime openings,jpop,music",
+   "country": "Japan",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Shonan Beach FM 78.9",
+   "url": "http://shonanbeachfm.out.airtime.pro:8000/shonanbeachfm_a",
+   "favicon": "https://www.beachfm.co.jp/favicon.ico",
+   "tags": "classic jazz,hawaiian music,pop,smooth jazz",
+   "country": "Japan",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "FM Kahoku 78.7 (FMかほく, JOZZ5AM-FM, 78.7 MHz, Kahoku City, Ishikawa)",
+   "url": "http://radio.kahoku.net:8000/;",
+   "favicon": "",
+   "tags": "enka,japan,japanese,jpop,kayokyoku,talk radio",
+   "country": "Japan",
+   "codec": "MP3",
+   "bitrate": 96
+  }
+ ],
+ "80s": [
+  {
+   "name": ".977 80s",
+   "url": "http://29318.live.streamtheworld.com:3690/977_80_SC",
+   "favicon": "",
+   "tags": "80s",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Big R Radio - 80s Metal FM",
+   "url": "http://bigrradio.cdnstream1.com/5186_128",
+   "favicon": "http://www.bigrradio.com/image/favicon/apple-touch-icon.png",
+   "tags": "80s,aor,glam metal,hair metal,hard rock,heavy metal,metal",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Heart 80s",
+   "url": "https://media-ssl.musicradio.com/Heart80sMP3",
+   "favicon": "https://www.heart.co.uk/assets_v4r/heart/img/favicon-196x196.png",
+   "tags": "80s,national,pop,public radio,variety",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "100% Radio 80",
+   "url": "http://100radio-80.ice.infomaniak.ch/100radio-80-128.mp3",
+   "favicon": "https://bocir-prod-bucket.s3.amazonaws.com/radios/centpourcent/images/favicon.ico",
+   "tags": "80s",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "SomaFM Underground 80s (128k MP3)",
+   "url": "https://ice5.somafm.com/u80s-128-mp3",
+   "favicon": "https://somafm.com/img3/u80s-400.png",
+   "tags": "80s,new wave,uk synthpop",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "1000 HITS 80s",
+   "url": "http://c2.auracast.net:8048/stream",
+   "favicon": "",
+   "tags": "70s,80s,90s,italo,italo dance,italo disco,oldies",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Chante France 80's",
+   "url": "http://stream1.chantefrance.com/cf-80",
+   "favicon": "https://bocir-prod-bucket.s3.eu-west-1.amazonaws.com/radios/chante-france/images/favicon.x-icon",
+   "tags": "80s",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio 80",
+   "url": "http://str01.fluidstream.net:7020/;stream.mp3",
+   "favicon": "https://upload.wikimedia.org/wikipedia/it/1/1b/Radio80.jpg",
+   "tags": "80s,noventa padovana",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "90s": [
+  {
+   "name": "Dance Wave Retro!",
+   "url": "https://dancewave.online/retrodance.mp3",
+   "favicon": "https://dancewave.online/dwr_logo.png",
+   "tags": "90s dance",
+   "country": "Hungary",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio 105 - Dance 90",
+   "url": "http://icy.unitedradio.it/105Dance90.mp3",
+   "favicon": "",
+   "tags": "90s,eurodance,mediaset",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Play 90's",
+   "url": "http://live.playradio.org:9090/90HD",
+   "favicon": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/b7/89/4a/b7894a1a-07c8-d9ae-fc50-5fcc33c59173/source/280x280.jpg",
+   "tags": "90s,dance,euro hits,eurodance",
+   "country": "Romania",
+   "codec": "AAC",
+   "bitrate": 192
+  },
+  {
+   "name": "Radio 90s Eurodance",
+   "url": "https://listen1.myradio24.com/5967",
+   "favicon": "https://pp.userapi.com/c837231/v837231617/5990/ChfZPOJgSmA.jpg",
+   "tags": "90s,eurodance,online,only music",
+   "country": "Kazakhstan",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "Heart 90s",
+   "url": "https://media-ssl.musicradio.com/Heart90sMP3",
+   "favicon": "https://www.heart.co.uk/assets_v4r/heart/img/favicon-196x196.png",
+   "tags": "90s,national,pop,public radio,variety",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "RMF 90s",
+   "url": "http://31.192.216.7/90S",
+   "favicon": "http://www.rmfon.pl/assets/images/favicon/apple-touch-icon.png",
+   "tags": "90s",
+   "country": "Poland",
+   "codec": "AAC+",
+   "bitrate": 64
+  },
+  {
+   "name": "KISS FM 100.6",
+   "url": "http://live.radiokiss.gr/kissfm1006hq.mp3",
+   "favicon": "",
+   "tags": "00s,80s,90s,adult contemporary,pop,rock",
+   "country": "Greece",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "Retro Rádió",
+   "url": "https://icast.connectmedia.hu/5001/live.mp3",
+   "favicon": "https://retroradio.hu/wp-content/themes/retroradio/assets/dist/img/favicon/android-icon-192x192.png",
+   "tags": "pop,rock,retro,80s,90s,2000s",
+   "country": "Hungary",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "2000s": [
+  {
+   "name": "- 0 N - 2000s on Radio",
+   "url": "https://0n-2000s.radionetz.de/0n-2000s.mp3",
+   "favicon": "https://www.0nradio.com/logos/0n-2000s_600x600.jpg",
+   "tags": "00er,00s,2000er,2000s,dance,hits,pop,rock",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "- 0 N - Greatest Hits on Radio",
+   "url": "https://0n-greatesthits.radionetz.de/0n-greatesthits.mp3",
+   "favicon": "https://www.0nradio.com/logos/0n-greatest-hits_600x600.jpg",
+   "tags": "2000er,2000s,2010er,2010s,80er,80s,90er,90s,black,dance,hiphop,hits,pop,rock",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "SomaFM Groove Salad Classic (128k MP3)",
+   "url": "https://ice2.somafm.com/gsclassic-128-mp3",
+   "favicon": "https://somafm.com/img3/gsclassic400.jpg",
+   "tags": "ambient,downtempo,early 2000s",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 160
+  },
+  {
+   "name": "Best Of Techno",
+   "url": "http://stream.laut.fm/best-of-techno",
+   "favicon": "",
+   "tags": "2000er,2000s,classic,deep techno,dub techno,electro,electronic,electronica,minimal,minimal techno,techno",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "NIUS",
+   "url": "http://radio.nius.de/live?ref=radiobrowser",
+   "favicon": "https://i.ibb.co/Snq1MMW/NIUS-LOGO.png",
+   "tags": "2000s,80s,90s,hits,news,news talk,news talk music,pop,pop music,talk,top hits,world news",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "iHeart2000s Radio",
+   "url": "http://stream.revma.ihrhls.com/zc6850/hls.m3u8",
+   "favicon": "https://i.iheart.com/v3/re/new_assets/98316aea-eed5-49f2-9b56-cc3d22663f8d?ops=fit(240%2C240)",
+   "tags": "2000er,2000s",
+   "country": "The United States Of America",
+   "codec": "AAC",
+   "bitrate": 24
+  },
+  {
+   "name": "MIX Ciudad de México - 106.5 FM - XHDFM-FM - Grupo ACIR - Ciudad de México",
+   "url": "https://18363.live.streamtheworld.com:443/XHDFMFMAAC.aac",
+   "favicon": "https://i.iheart.com/v3/re/new_assets/77b18faf-00b4-483d-bb24-377cdd4b4998?ops=fit(240%2C240)",
+   "tags": "2000s,2010s,80s,90s,90s y más,acir,cdmx,ciudad de méxico,estación,grupo acir,iheart,iheart radio,mex,mix,mix fm,mx,méxic",
+   "country": "Mexico",
+   "codec": "AAC+",
+   "bitrate": 48
+  },
+  {
+   "name": "UVA 90.5 (Aguascalientes) - 90.5 FM - XHUVA-FM - Radiogrupo - Aguascalientes, AG",
+   "url": "http://201.159.48.106:1407/",
+   "favicon": "https://upload.wikimedia.org/wikipedia/commons/7/73/XHUVA_UVA90.5_logo.png",
+   "tags": "1980's,1980s,1990s,2000s,70 80 hits,80's,80er,80s,80s rock,90,90's,90.5,90.5 fm,90er,90s,90s y más,aguascalientes,anos 2",
+   "country": "Mexico",
+   "codec": "MP3",
+   "bitrate": 0
+  }
+ ],
+ "News": [
+  {
+   "name": "BBC World Service",
+   "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+   "favicon": "http://cdn-profiles.tunein.com/s24948/images/logoq.jpg?t=1",
+   "tags": "news,talk",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "MP3",
+   "bitrate": 56
+  },
+  {
+   "name": "NPR 24 Hour Program Stream",
+   "url": "http://npr-ice.streamguys1.com/live.mp3",
+   "favicon": "https://static-assets.npr.org/static/images/favicon/favicon-96x96.png",
+   "tags": "news,news talk,political talk,politics,public radio,talk",
+   "country": "The United States Of America",
+   "codec": "MP3",
+   "bitrate": 96
+  },
+  {
+   "name": "RFI Monde",
+   "url": "http://live02.rfi.fr/rfimonde-64.mp3",
+   "favicon": "http://www.rfi.fr/apple-touch-icon.png",
+   "tags": "news,world music",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 64
+  },
+  {
+   "name": "LBC UK",
+   "url": "http://media-ice.musicradio.com/LBCUK",
+   "favicon": "https://cdn-radiotime-logos.tunein.com/s220687q.png",
+   "tags": "news talk,talk",
+   "country": "The United Kingdom Of Great Britain And Northern Ireland",
+   "codec": "AAC",
+   "bitrate": 48
+  },
+  {
+   "name": "Cadena SER España",
+   "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3",
+   "favicon": "https://cadenaser00.epimg.net/favicon.png",
+   "tags": "cultural news,live,news,news talk,spanish,sports news",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "الجزيرة صوت",
+   "url": "https://live-hls-audio-web-aja.getaj.net/VOICE-AJA/01.m3u8",
+   "favicon": "https://upload.wikimedia.org/wikipedia/ar/thumb/7/71/Aljazeera.svg/1200px-Aljazeera.svg.png",
+   "tags": "news",
+   "country": "Qatar",
+   "codec": "UNKNOWN",
+   "bitrate": 0
+  },
+  {
+   "name": "RFE/RL Radio Farda",
+   "url": "http://rfe21.akacast.akamaistream.net/7/751/437779/v1/ibb.akacast.akamaistream.net/rfe21",
+   "favicon": "http://www.radiofarda.com//Content/responsive/RFE/img/webApp/favicon.ico",
+   "tags": "music,news,persian,rfe-rl,talk",
+   "country": "Czechia",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "Вести ФМ (Vesti FM)",
+   "url": "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps",
+   "favicon": "",
+   "tags": "news",
+   "country": "The Russian Federation",
+   "codec": "MP3",
+   "bitrate": 192
+  }
+ ],
+ "Spanish": [
+  {
+   "name": "Cadena 100",
+   "url": "http://cadena100-streamers-mp3.flumotion.com/cope/cadena100.mp3",
+   "favicon": "https://www.cadena100.es/estaticos/apple-touch-icon-192x192.png",
+   "tags": "music",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "LOS 40 Principales España",
+   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/Los40.mp3",
+   "favicon": "https://los40es00.epimg.net/iconos/v1.x/v1.0/touch-apple.png",
+   "tags": "music,pop,top 40",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Chocolate FM",
+   "url": "http://streaming5.elitecomunicacion.es:8082/live.mp3",
+   "favicon": "https://www.chocolatefm.com/__ovh/common/img/favicon.ico",
+   "tags": "chr,dance,español,latin,latin music,latino,pop,pop latino,reggaeton,top 40,trap",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "Rock FM",
+   "url": "http://flucast02-h-cloud.flumotion.com/cope/rockfm-low.mp3",
+   "favicon": "https://www.rockfm.fm/estaticos/apple-touch-icon-192x192.png",
+   "tags": "",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 96
+  },
+  {
+   "name": "_80 EXITOS",
+   "url": "https://80sexitos.stream.laut.fm/80sexitos",
+   "favicon": "",
+   "tags": "70s,80s,90s,dance,disco,musica romantica",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Caracol Radio Colombia (HJGL 100.9 / HJCY 810 AM, Bogotá) [AAC]",
+   "url": "http://27343.live.streamtheworld.com:3690/CARACOL_RADIOAAC_SC",
+   "favicon": "http://www.caracol.com.co/pf/resources/caracol-colombia/touch-icon-ipad.png?d=323",
+   "tags": "news,talk radio",
+   "country": "Colombia",
+   "codec": "AAC+",
+   "bitrate": 32
+  },
+  {
+   "name": "Los 40 Urban",
+   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_URBAN.mp3",
+   "favicon": "https://los40es00.epimg.net/iconos/v1.x/v1.0/promos/promo_og_los40.png",
+   "tags": "dance,music,pop,urban",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "esRadio",
+   "url": "http://livestreaming.esradio.fm/stream64.mp3",
+   "favicon": "",
+   "tags": "news,talk",
+   "country": "Spain",
+   "codec": "MP3",
+   "bitrate": 56
+  }
+ ],
+ "French": [
+  {
+   "name": "France Inter",
+   "url": "http://direct.franceinter.fr/live/franceinter-hifi.aac",
+   "favicon": "https://www.franceinter.fr/favicon.ico",
+   "tags": "",
+   "country": "France",
+   "codec": "AAC",
+   "bitrate": 192
+  },
+  {
+   "name": "France Info",
+   "url": "http://icecast.radiofrance.fr/franceinfo-hifi.aac",
+   "favicon": "https://www.francetvinfo.fr/assets/common/images/pwa/ios/120-0cfbd6d4.png",
+   "tags": "aac,information,public radio,radio france",
+   "country": "France",
+   "codec": "AAC",
+   "bitrate": 192
+  },
+  {
+   "name": "France Culture",
+   "url": "http://icecast.radiofrance.fr/franceculture-hifi.aac",
+   "favicon": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c9/France_Culture_-_2008.svg/1024px-France_Culture_-_2008.svg.png",
+   "tags": "aac,culture,public radio,radio france",
+   "country": "France",
+   "codec": "AAC",
+   "bitrate": 192
+  },
+  {
+   "name": "FIP",
+   "url": "http://icecast.radiofrance.fr/fip-hifi.aac",
+   "favicon": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d5/FIP_logo_2005.svg/1024px-FIP_logo_2005.svg.png",
+   "tags": "aac,music,public radio,radio france",
+   "country": "France",
+   "codec": "AAC",
+   "bitrate": 192
+  },
+  {
+   "name": "Skyrock",
+   "url": "http://icecast.skyrock.net/s/natio_mp3_128k",
+   "favicon": "https://play-lh.googleusercontent.com/dPiQ01OUKZVfRZUbbb-EVK5g9miS_K-xrxHgmBbynGG-GQ53yt3GzFKr0zUTnb-xswQ=s200-rw",
+   "tags": "rap",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "RMC FR",
+   "url": "https://audio.bfmtv.com/rmcradio_128.mp3",
+   "favicon": "https://i1.wp.com/www.mediasportif.fr/wp-content/uploads/2014/05/Radio-RMC.jpg",
+   "tags": "france,info,sport,talk",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio Nova",
+   "url": "http://novazz.ice.infomaniak.ch/novazz-128.mp3",
+   "favicon": "https://www.nova.fr/wp-content/uploads/sites/2/2021/02/cropped-favicon.png?fit=180%2c180&#038;quality=75",
+   "tags": "alternative,pop,world music",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Jazz Radio Blues",
+   "url": "http://jazzblues.ice.infomaniak.ch/jazzblues-high.mp3",
+   "favicon": "https://www.jazzradio.fr/apple-touch-icon-120x120.png",
+   "tags": "blues,jazz",
+   "country": "France",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "German": [
+  {
+   "name": "1LIVE",
+   "url": "http://wdr-1live-live.icecast.wdr.de/wdr/1live/live/mp3/128/stream.mp3",
+   "favicon": "https://www1.wdr.de/radio/1live/resources/img/favicon/apple-touch-icon.png",
+   "tags": "ard,public radio,rock,top 40,wdr",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "WDR 5",
+   "url": "http://wdr-wdr5-live.icecast.wdr.de/wdr/wdr5/live/mp3/128/stream.mp3",
+   "favicon": "https://www1.wdr.de/resources-v5.134.1/img/favicon/apple-touch-icon.png",
+   "tags": "information,news,news talk,political talk,talk",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Rock Antenne - Heavy Metal",
+   "url": "http://mp3channels.webradio.rockantenne.de/heavy-metal",
+   "favicon": "http://www.rockantenne.de/logos/station-rock-antenne/favicon.ico",
+   "tags": "heavy metal,metal",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Antenne Bayern",
+   "url": "http://mp3channels.webradio.antenne.de/antenne",
+   "favicon": "",
+   "tags": "top 40",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "SWR3",
+   "url": "https://liveradio.swr.de/sw282p3/swr3/play.mp3",
+   "favicon": "https://swr3.de/assets/swr3/icons/apple-touch-icon.png",
+   "tags": "news,pop,rock",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio Eins",
+   "url": "http://f111.rndfnk.com/ard/rbb/radioeins/live/mp3/128/stream.mp3?cid=01FC1WH12KJ93TCQPDSE2E5PZ9&sid=3K567RgbAXUlXKklCDykCmZaDDc&token=Qfx-mDPhSlPx4G08BsZw1v-XDCmD049S1mGaY-Q8bkI&tvf=aKsGuoJm2hhmMTExLnJuZGZuay5jb20",
+   "favicon": "http://www.radioeins.de/content/dam/rbb/rbb/logos/touch/rad-128.png",
+   "tags": "adult contemporary,alternative,ard,information,pop,public radio,rbb,rock,talk",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Inforadio",
+   "url": "http://dispatcher.rndfnk.com/rbb/inforadio/live/mp3/mid",
+   "favicon": "http://www.inforadio.de/content/dam/rbb/rbb/logos/touch/inf-128.png",
+   "tags": "ard,information,news,public radio,rbb",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "MANGORADIO",
+   "url": "https://mangoradio.stream.laut.fm/mangoradio",
+   "favicon": "https://mangoradio.de/wp-content/uploads/cropped-Logo-192x192.webp",
+   "tags": "music,variety",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "Arabic": [
+  {
+   "name": "Mosaique FM",
+   "url": "http://radio.mosaiquefm.net:8000/mosalive",
+   "favicon": "",
+   "tags": "",
+   "country": "Tunisia",
+   "codec": "MP3",
+   "bitrate": 90
+  },
+  {
+   "name": "Radio 9090 90.9",
+   "url": "http://9090streaming.mobtada.com/9090FMEGYPT",
+   "favicon": "http://www.9090.fm/favicon.ico",
+   "tags": "",
+   "country": "Egypt",
+   "codec": "MP3",
+   "bitrate": 64
+  },
+  {
+   "name": "Aljazeera Arabic",
+   "url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
+   "favicon": "https://www.aljazeera.net/favicon.ico",
+   "tags": "aljazeera,الجزيرة,قناة الجزيرة",
+   "country": "Qatar",
+   "codec": "AAC,H.264",
+   "bitrate": 6324
+  },
+  {
+   "name": "KnOOz FM",
+   "url": "http://streaming.knoozfm.net:8000/knoozfm",
+   "favicon": "",
+   "tags": "",
+   "country": "Tunisia",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio Aswat",
+   "url": "http://broadcast.ice.infomaniak.ch/aswat-high.mp3?.mp3",
+   "favicon": "http://www.radioaswat.ma/favicon.ico",
+   "tags": "",
+   "country": "Morocco",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio Tunisie Sfax",
+   "url": "http://rtstream.tanitweb.com/sfax",
+   "favicon": "",
+   "tags": "regional",
+   "country": "Tunisia",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Sam FM",
+   "url": "http://edge.mixlr.com/channel/kijwr",
+   "favicon": "",
+   "tags": "",
+   "country": "Yemen",
+   "codec": "MP3",
+   "bitrate": 0
+  },
+  {
+   "name": "Sana’a Radio راديو صنعاء",
+   "url": "https://dc5.serverse.com/proxy/pbmhbvxs/stream",
+   "favicon": "",
+   "tags": "",
+   "country": "Yemen",
+   "codec": "MP3",
+   "bitrate": 96
+  }
+ ],
+ "Hindi": [
+  {
+   "name": "Radio Mirchi Hindi",
+   "url": "https://eu8.fastcast4u.com/proxy/clyedupq/stream",
+   "favicon": "https://onlineradiohub.com/wp-content/uploads/2023/05/radio-mirchi-hindi-fm.jpg",
+   "tags": "",
+   "country": "India",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Mirchi Top 20",
+   "url": "https://drive.uber.radio/uber/bollywoodnow/icecast.audio",
+   "favicon": "http://mirchi.in/favicon-196x196.png",
+   "tags": "bollywood,hindi,mirchi,pop",
+   "country": "India",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio BollyFm",
+   "url": "http://stream.radiobollyfm.in:8201/hd?t=1526570335",
+   "favicon": "",
+   "tags": "",
+   "country": "India",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Hits Of Lata Mangeshkar",
+   "url": "http://stream.zeno.fm/g95zm67prfhvv",
+   "favicon": "",
+   "tags": "bollywood,desi,hindi,indian",
+   "country": "India",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Hits Of Mohammed Rafi",
+   "url": "http://stream.zeno.fm/0zkr7x8ztm0uv",
+   "favicon": "",
+   "tags": "bollywood,desi,hindi",
+   "country": "India",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Bollywood 2010's",
+   "url": "https://drive.uber.radio/uber/bollywood2010s/icecast.audio",
+   "favicon": "",
+   "tags": "bollywood,hindi",
+   "country": "India",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Hindi Retro",
+   "url": "https://stream.zeno.fm/v2zfmxef798uv",
+   "favicon": "https://onlineradiohub.com/wp-content/uploads/2023/05/mirchi-retro-hindi.jpg",
+   "tags": "",
+   "country": "India",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Vividh Bharati",
+   "url": "https://air.pc.cdn.bitgravity.com/air/live/pbaudio001/playlist.m3u8",
+   "favicon": "https://onlineradiohub.com/wp-content/uploads/2023/02/vividh-bharati.jpg",
+   "tags": "",
+   "country": "India",
+   "codec": "AAC",
+   "bitrate": 93
+  }
+ ],
+ "Korean": [
+  {
+   "name": "Listen.moe Kpop",
+   "url": "https://listen.moe/kpop/stream",
+   "favicon": "https://listen.moe/favicon.ico",
+   "tags": "kpop",
+   "country": "The Republic Of Korea",
+   "codec": "OGG",
+   "bitrate": 192
+  },
+  {
+   "name": "Big B Radio - Kpop",
+   "url": "https://antares.dribbcast.com/proxy/kpop?mp=/s",
+   "favicon": "",
+   "tags": "music,pop",
+   "country": "The Republic Of Korea",
+   "codec": "MP3",
+   "bitrate": 192
+  },
+  {
+   "name": "Oldpop Cafe",
+   "url": "http://cast.oldpopcafe.net:7080/",
+   "favicon": "",
+   "tags": "oldies,pop music,popular music",
+   "country": "The Republic Of Korea",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "SBS PopAsia",
+   "url": "https://sbs-ice.streamguys1.com/sbs-popasia-sbs-web",
+   "favicon": "https://www.sbs.com.au/_next/static/img/language/app-icon_128x128-18ef105.png",
+   "tags": "c-pop,cantonese,chinese pop,cpop,hong kong music,j-pop,japanese music,jpop,k-pop,korean music,kpop,multicultural,pop mus",
+   "country": "Australia",
+   "codec": "AAC+",
+   "bitrate": 97
+  },
+  {
+   "name": "juka radio kpop",
+   "url": "https://juka-kpop.stream.laut.fm/juka-kpop?t302=2021-04-01_09-03-35&uuid=6aa06ca0-9a01-407d-91af-155d24c5c405",
+   "favicon": "",
+   "tags": "k-pop,kpop",
+   "country": "Germany",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "평양FM105.2",
+   "url": "http://listen7.myradio24.com/69366",
+   "favicon": "https://www.behindthecurtain-northkorea.com/favicon.ico",
+   "tags": "105.2,105.2 fm,music",
+   "country": "The Democratic Peoples Republic Of Korea",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "CJRK-FM 102.7 \\",
+   "url": "https://centova.radioservers.biz/proxy/eastfmc1/stream",
+   "favicon": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/CJRK_EastFM102.7_logo.png/220px-CJRK_EastFM102.7_logo.png",
+   "tags": "multicultural,multilingual",
+   "country": "Canada",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "Portuguese": [
+  {
+   "name": "Antena 1 São Paulo, SP (ZYD823 94,7 MHz FM) [aac]",
+   "url": "http://antena1.newradio.it/stream?ext=.mp3",
+   "favicon": "",
+   "tags": "adult contemporary,jazz,pop,smooth jazz",
+   "country": "Brazil",
+   "codec": "AAC+",
+   "bitrate": 96
+  },
+  {
+   "name": "Rádio Flashback Fm",
+   "url": "http://hd.matutos.com.br:8008/;stream.mp3",
+   "favicon": "",
+   "tags": "brasil,flashback,internacionais,nacionais,recordações,saudades",
+   "country": "Brazil",
+   "codec": "AAC+",
+   "bitrate": 52
+  },
+  {
+   "name": "Rádio Bossa Nova Brazil",
+   "url": "http://54.38.43.201:8009/stream-128kmp3-BossaNovaBrazil",
+   "favicon": "http://www.vip-radios.fm/favicon.ico",
+   "tags": "bossa nova,brazilian music",
+   "country": "Brazil",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "RFM",
+   "url": "https://23603.live.streamtheworld.com/RFMAAC.aac",
+   "favicon": "https://rfmsite-images.azureedge.net/icons/touch-icon-iphone-retina.png",
+   "tags": "64kbps",
+   "country": "Portugal",
+   "codec": "AAC+",
+   "bitrate": 64
+  },
+  {
+   "name": "Rádio Renascença",
+   "url": "http://22653.live.streamtheworld.com/RADIO_RENASCENCA_SC",
+   "favicon": "https://rrsite-images.azureedge.net/favicon/apple-touch-icon.png",
+   "tags": "national news",
+   "country": "Portugal",
+   "codec": "MP3",
+   "bitrate": 64
+  },
+  {
+   "name": "JB FM",
+   "url": "http://26683.live.streamtheworld.com/JBFMAAC_SC",
+   "favicon": "",
+   "tags": "",
+   "country": "Brazil",
+   "codec": "AAC+",
+   "bitrate": 48
+  },
+  {
+   "name": "89 A Radio Rock",
+   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_89FM_ADP.aac?dist=site-89fm",
+   "favicon": "",
+   "tags": "alternative rock,rock",
+   "country": "Brazil",
+   "codec": "AAC+",
+   "bitrate": 128
+  },
+  {
+   "name": "Rádio Observador",
+   "url": "http://195.23.85.126:8455/stream",
+   "favicon": "https://observador.pt/wp-content/themes/observador-child/assets/build/img/favicon.ico",
+   "tags": "",
+   "country": "Portugal",
+   "codec": "MP3",
+   "bitrate": 128
+  }
+ ],
+ "Italian": [
+  {
+   "name": "Rai Radio 1",
+   "url": "http://icestreaming.rai.it/1.mp3",
+   "favicon": "",
+   "tags": "news,public radio,rai",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 256
+  },
+  {
+   "name": "Virgin Radio Classic Rock",
+   "url": "http://icy.unitedradio.it/VirginRockClassics.mp3",
+   "favicon": "",
+   "tags": "classic rock,mediaset",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Radio 24 il sole 24 ore",
+   "url": "http://shoutcast2.radio24.it:8000/;",
+   "favicon": "https://www.radio24.ilsole24ore.com/whitelabel/group-2420101401040528/img/apple-touch-icon.png",
+   "tags": "news talk",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 64
+  },
+  {
+   "name": "Radio 105 Network",
+   "url": "http://icecast.unitedradio.it/Radio105.mp3",
+   "favicon": "https://upload.wikimedia.org/wikipedia/it/0/01/105.png",
+   "tags": "hits,mediaset,pop,top 40",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Rai Radio 3",
+   "url": "http://icestreaming.rai.it/3.mp3",
+   "favicon": "",
+   "tags": "classical,culture,public radio,rai",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 320
+  },
+  {
+   "name": "RMC Radio Monte Carlo",
+   "url": "http://icecast.unitedradio.it/RMC.mp3",
+   "favicon": "",
+   "tags": "adult contemporary,mediaset,pop",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Virgin Radio Italia",
+   "url": "http://icecast.unitedradio.it/Virgin.mp3",
+   "favicon": "http://www.virginradio.it/favicon_2.ico?v=1722509813651",
+   "tags": "mediaset,pop rock",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 128
+  },
+  {
+   "name": "Tele Radio Stereo",
+   "url": "http://trsw.inmystream.info:8068/;stream.mp3",
+   "favicon": "http://cdn-radiotime-logos.tunein.com/s17518q.png",
+   "tags": "roma,sport,talk",
+   "country": "Italy",
+   "codec": "MP3",
+   "bitrate": 48
+  }
+ ]
+}

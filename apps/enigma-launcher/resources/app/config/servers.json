@@ -1,0 +1,49 @@
+{
+  "servers": [
+    {
+      "autoJoin": true,
+      "host": "192.0.2.10",
+      "id": "httyd-normal",
+      "mcVersion": "1.18.2",
+      "name": "HTTYD 1.18.2 Normal",
+      "port": 25565,
+      "tagline": "The classic Berk experience. Build, explore, and train your dragon.",
+      "modpack": {
+        "name": "",
+        "url": "",
+        "sha1": "",
+        "loader": ""
+      }
+    },
+    {
+      "autoJoin": true,
+      "host": "192.0.2.11",
+      "id": "httyd-horror",
+      "mcVersion": "1.18.2",
+      "name": "HTTYD-multiverse horror",
+      "port": 25565,
+      "tagline": "A darker multiverse. Not for the faint of heart - bring a light.",
+      "modpack": {
+        "name": "",
+        "url": "",
+        "sha1": "",
+        "loader": ""
+      }
+    },
+    {
+      "autoJoin": true,
+      "host": "192.0.2.12",
+      "id": "httyd-alt",
+      "mcVersion": "1.18.2",
+      "name": "HTTYD 1.18.2 Alternative",
+      "port": 25565,
+      "tagline": "An alternate Berk timeline. Same dragons, different story.",
+      "modpack": {
+        "name": "",
+        "url": "",
+        "sha1": "",
+        "loader": ""
+      }
+    }
+  ]
+}

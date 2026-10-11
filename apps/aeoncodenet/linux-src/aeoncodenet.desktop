@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=AeonCodeNet
+Comment=LLM-powered code generator (Aeon OS Berk)
+Exec=/opt/aeoncodenet/run.sh
+Icon=aeoncodenet
+Terminal=false
+Categories=Development;Utility;
+StartupWMClass=aeoncodenet

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=3D Maker
+Comment=Make 3D shapes
+Exec=bash -c 'cd "$(dirname "$(readlink -f "%k")")" && exec ./run.sh %U'
+Terminal=false
+Categories=Game;

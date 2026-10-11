@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aeon Radio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div id="tabs">
+      <button class="tab active" data-tab="browse">Browse</button>
+      <button class="tab" data-tab="favorites">Favorites</button>
+      <button class="tab" data-tab="streams">My Streams</button>
+    </div>
+  </header>
+
+  <div id="browse-controls">
+    <div id="search-row">
+      <input id="search" type="text" placeholder="Search stations…" autocomplete="off">
+    </div>
+    <div class="chip-row" id="genre-chips"></div>
+    <div class="chip-row" id="preset-chips"></div>
+    <div class="chip-row" id="country-chips"></div>
+  </div>
+
+  <div id="content"></div>
+
+  <div id="mini-player">
+    <div class="art" id="mini-art">♪</div>
+    <div id="mini-info">
+      <div id="mini-title"></div>
+      <div id="mini-sub"></div>
+    </div>
+    <div id="mini-spinner" class="mini-spinner" style="display:none"></div>
+    <button class="icon-btn" id="mini-play" title="Play/Pause">▶</button>
+    <button class="icon-btn" id="mini-stop" title="Stop">⏹</button>
+  </div>
+</div>
+
+<div id="player-overlay">
+  <div id="player-card">
+    <button class="icon-btn" id="player-close" title="Close">✕</button>
+    <div class="art" id="player-art">♪</div>
+    <h2 id="player-title">Nothing playing</h2>
+    <p id="player-station"></p>
+    <p id="player-meta"></p>
+    <p id="player-error"></p>
+    <div id="player-controls">
+      <button class="icon-btn" id="player-fav" title="Favorite">☆</button>
+      <div id="player-spinner" class="mini-spinner" style="display:none"></div>
+      <button class="icon-btn" id="player-play" title="Play/Pause">▶</button>
+      <button class="icon-btn" id="player-stop" title="Stop">⏹</button>
+    </div>
+    <div class="vol-row"><span>🔊</span><input type="range" id="volume" min="0" max="100" value="100"></div>
+    <div class="sleep-row"><span>⏱</span><span>Sleep</span></div>
+    <div class="sleep-chips" id="sleep-chips"></div>
+    <p id="sleep-note"></p>
+  </div>
+</div>
+
+<div class="dialog-overlay" id="country-overlay">
+  <div class="dialog">
+    <h3>Choose country</h3>
+    <input id="country-search" type="text" placeholder="Search…" autocomplete="off">
+    <div id="country-list"></div>
+    <div class="dialog-btns"><button class="btn ghost" id="country-close">Close</button></div>
+  </div>
+</div>
+
+<div class="dialog-overlay" id="stream-overlay">
+  <div class="dialog">
+    <h3>Add stream</h3>
+    <input id="stream-name" type="text" placeholder="Name (optional)" autocomplete="off">
+    <input id="stream-url" type="text" placeholder="Stream URL — http(s), LAN IPs OK" autocomplete="off">
+    <div class="dialog-btns">
+      <button class="btn ghost" id="stream-cancel">Cancel</button>
+      <button class="btn" id="stream-add">Add</button>
+    </div>
+  </div>
+</div>
+
+<button id="fab" title="Add stream" style="display:none">＋</button>
+
+<script src="vendor/hls.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

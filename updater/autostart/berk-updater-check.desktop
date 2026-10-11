@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Berk update check
+Comment=Quietly checks for updates in the background
+Exec=/opt/berk-updater/berk-updater.py --auto
+Icon=system-software-update
+Terminal=false
+Categories=System;
+X-GNOME-Autostart-enabled=true
+NoDisplay=true

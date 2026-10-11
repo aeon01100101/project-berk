@@ -1,0 +1,77 @@
+{
+  "_comment": "Isaiah: this is the ONE place you set your GitHub name. Put your real GitHub user or organization name in \"github_owner\" below and every app below will check the right place. Right now it says \"aeon-os\" as a placeholder.",
+  "api_base": "https://api.github.com",
+  "components": [
+    {
+      "asset_pattern": "music_*_amd64.deb",
+      "id": "music",
+      "install_dir": "/opt/aeonradio",
+      "menu_name": "Music",
+      "repo": "aeonradio",
+      "sums_asset": "SHA256SUMS",
+      "type": "app",
+      "version_file": "/opt/aeonradio/version.txt"
+    },
+    {
+      "asset_pattern": "code-maker_*_amd64.deb",
+      "id": "code-maker",
+      "install_dir": "/opt/aeoncodenet",
+      "menu_name": "Code Maker",
+      "repo": "aeoncodenet",
+      "sums_asset": "SHA256SUMS",
+      "type": "app",
+      "version_file": "/opt/aeoncodenet/version.txt"
+    },
+    {
+      "asset_pattern": "picture-maker_*_amd64.deb",
+      "id": "picture-maker",
+      "install_dir": "/opt/aeonphoto",
+      "menu_name": "Picture Maker",
+      "repo": "aeonphoto",
+      "sums_asset": "SHA256SUMS",
+      "type": "app",
+      "version_file": "/opt/aeonphoto/version.txt"
+    },
+    {
+      "asset_pattern": "3d-maker_*_amd64.deb",
+      "id": "3d-maker",
+      "install_dir": "/opt/aeonobj",
+      "menu_name": "3D Maker",
+      "repo": "aeonobj",
+      "sums_asset": "SHA256SUMS",
+      "type": "app",
+      "version_file": "/opt/aeonobj/version.txt"
+    },
+    {
+      "asset_pattern": "aeoncraft_*_amd64.deb",
+      "id": "aeoncraft",
+      "install_dir": "/opt/aeoncraft",
+      "menu_name": "AeonCraft",
+      "repo": "aeoncraft",
+      "sums_asset": "SHA256SUMS",
+      "type": "app",
+      "version_file": "/opt/aeoncraft/version.txt"
+    },
+    {
+      "asset_pattern": "minecraft_*_amd64.deb",
+      "id": "minecraft",
+      "install_dir": "/opt/enigma-launcher",
+      "menu_name": "Minecraft",
+      "repo": "enigma-launcher",
+      "sums_asset": "SHA256SUMS",
+      "type": "app",
+      "version_file": "/opt/enigma-launcher/version.txt"
+    },
+    {
+      "asset_pattern": "berk-system_*.tar.gz",
+      "id": "berk-system",
+      "install_dir": "/opt/berk-system",
+      "menu_name": "Berk system",
+      "repo": "aeon-os-berk",
+      "sums_asset": "SHA256SUMS",
+      "type": "system",
+      "version_file": "/opt/berk-system/version.txt"
+    }
+  ],
+  "github_owner": "aeon01100101"
+}

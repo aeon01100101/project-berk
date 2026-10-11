@@ -1,0 +1,17 @@
+# Aeon OS Berk — "Berk Simple" system-wide Cinnamon defaults
+# Installed to /etc/dconf/db/local.d/ by berk-simple/apply-ux.sh, then `dconf update`.
+# Only long-standing, well-known keys are set here so a wrong value can never
+# break the session (Cinnamon falls back to its default for unknown values).
+# Panel layout, menu-button label, and applet order are captured from the
+# reference test-VM build via `dconf dump` (see CUBIC.md) and applied on top.
+
+[org/cinnamon/desktop/interface]
+gtk-theme='Mint-Y-Blue'
+icon-theme='Mint-Y-Blue'
+font-name='Noto Sans 12'
+
+[org/cinnamon/theme]
+name='Mint-Y-Blue'
+
+[org/cinnamon/desktop/wm/preferences]
+theme='Mint-Y-Blue'

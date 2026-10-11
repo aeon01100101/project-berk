@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=AeonCraft
+Comment=Build and play
+Exec=bash -c 'cd "$(dirname "$(readlink -f "%k")")" && exec ./run.sh %U'
+Terminal=false
+Categories=Game;

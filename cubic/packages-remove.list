@@ -1,0 +1,5 @@
+# Aeon OS Berk — packages REMOVED from stock Linux Mint 22.x
+# Crash reporters that phone home. Both verified present in noble; safe to purge
+# on a desktop (nothing in the default Mint install depends on them for boot).
+apport
+whoopsie

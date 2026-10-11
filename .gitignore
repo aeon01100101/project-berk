@@ -1,0 +1,33 @@
+# Packaged Electron runtimes (rebuilt via package-linux-apps.sh / per-app packaging).
+# For the three pre-packaged apps, only the app source + launchers are tracked.
+apps/*/linux-x64/
+apps/aeonobj/*
+!apps/aeonobj/resources/
+!apps/aeonobj/run.sh
+!apps/aeonobj/aeonobj.desktop
+!apps/aeonobj/README.txt
+apps/aeoncraft/*
+!apps/aeoncraft/resources/
+!apps/aeoncraft/run.sh
+!apps/aeoncraft/aeoncraft.desktop
+!apps/aeoncraft/README.txt
+apps/enigma-launcher/*
+!apps/enigma-launcher/resources/
+!apps/enigma-launcher/run.sh
+!apps/enigma-launcher/enigma-launcher.desktop
+!apps/enigma-launcher/README.txt
+
+# node_modules (reinstalled with npm)
+**/node_modules/
+
+# stable-diffusion.cpp build tree (rebuilt per README)
+apps/aeonphoto/sdcpp-build/
+
+# Release artifacts (attached to GitHub Releases, not stored in git)
+*.deb
+*.tar.gz
+updater/debs/
+
+# Logs and temp
+*.log
+/tmp/

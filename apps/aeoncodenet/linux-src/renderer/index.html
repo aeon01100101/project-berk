@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:;">
+<title>AeonCodeNet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="brand">
+    <span class="brand-mark">&lt;/&gt;</span>
+    <div>
+      <h1>AeonCodeNet</h1>
+      <p class="tagline">Describe a program in plain words — pick a language, and the LLM writes the code.</p>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="generate" role="tab">Generate</button>
+    <button class="tab" data-tab="history" role="tab">History</button>
+    <button class="tab" data-tab="settings" role="tab">Settings</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ======================= GENERATE ======================= -->
+  <section id="tab-generate" class="tab-panel active" role="tabpanel">
+    <div id="not-configured" class="card warn hidden">
+      <h3>LLM backend not configured</h3>
+      <p>AeonCodeNet needs an LLM to write code. Add your API key and model in Settings.</p>
+      <button id="open-settings" class="btn primary">Open Settings</button>
+    </div>
+
+    <label class="field-label" for="prompt">What should the program do?</label>
+    <textarea id="prompt" rows="5" placeholder="e.g. a to-do list app that saves tasks to a file"></textarea>
+    <p class="hint">Ctrl+Enter also generates.</p>
+
+    <div class="field-label">Language</div>
+    <div id="chips" class="chips"></div>
+
+    <button id="generate-btn" class="btn primary wide">Generate code</button>
+
+    <div id="gen-error" class="card error hidden"></div>
+
+    <div id="result-card" class="card hidden">
+      <div class="result-head">
+        <strong id="result-meta"></strong>
+        <button id="regenerate-btn" class="btn ghost">Regenerate</button>
+      </div>
+      <pre id="result-code" class="code"></pre>
+      <div class="row">
+        <button id="copy-btn" class="btn">Copy</button>
+        <button id="save-btn" class="btn">Save as file…</button>
+      </div>
+      <p class="muted">Saved to History automatically.</p>
+    </div>
+  </section>
+
+  <!-- ======================= HISTORY ======================= -->
+  <section id="tab-history" class="tab-panel" role="tabpanel">
+    <h2>History</h2>
+    <p class="muted">Every generated program is saved on this machine as a source file.</p>
+    <div id="history-empty" class="card hidden">
+      <p class="muted">Nothing here yet. Generate your first program and it will appear here.</p>
+    </div>
+    <div id="history-list" class="history-list"></div>
+  </section>
+
+  <!-- ======================= SETTINGS ======================= -->
+  <section id="tab-settings" class="tab-panel" role="tabpanel">
+    <h2>Settings</h2>
+    <p class="muted">AeonCodeNet talks to any OpenAI-compatible chat API. Your key is only ever sent to the endpoint below.</p>
+
+    <label class="field-label" for="set-baseurl">API base URL</label>
+    <input id="set-baseurl" type="text" placeholder="https://api.openai.com/v1" autocomplete="off" spellcheck="false">
+
+    <label class="field-label" for="set-apikey">API key</label>
+    <input id="set-apikey" type="password" placeholder="sk-…" autocomplete="off" spellcheck="false">
+
+    <label class="field-label" for="set-model">Model</label>
+    <input id="set-model" type="text" placeholder="gpt-4o-mini" autocomplete="off" spellcheck="false">
+
+    <button id="save-settings" class="btn primary wide">Save</button>
+    <div id="settings-saved" class="card ok hidden">Saved. The Generate tab is ready to use.</div>
+
+    <div class="card">
+      <h3>Notes</h3>
+      <ul class="notes">
+        <li>No key is bundled with the app — you supply your own.</li>
+        <li>Any OpenAI-compatible endpoint works (OpenAI, Azure OpenAI, or a self-hosted gateway) as long as it serves POST /chat/completions.</li>
+        <li>Generation quality depends on the model you choose.</li>
+        <li>Key stored in a 0600 file in the app config dir — no OS keyring integration yet.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- History detail modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <div class="modal-head">
+      <strong id="modal-title"></strong>
+      <button id="modal-close" class="btn ghost">✕</button>
+    </div>
+    <p id="modal-prompt" class="muted"></p>
+    <pre id="modal-code" class="code"></pre>
+    <div class="row">
+      <button id="modal-copy" class="btn">Copy</button>
+      <button id="modal-save" class="btn">Save as file…</button>
+      <button id="modal-close2" class="btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Delete confirm modal -->
+<div id="confirm-modal" class="modal hidden">
+  <div class="modal-box small">
+    <h3>Delete this program?</h3>
+    <p id="confirm-text" class="muted"></p>
+    <div class="row">
+      <button id="confirm-delete" class="btn danger">Delete</button>
+      <button id="confirm-cancel" class="btn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

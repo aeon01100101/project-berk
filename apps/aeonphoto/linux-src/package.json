@@ -1,0 +1,1 @@
+{"description":"AeonPhoto for Linux (Aeon OS Berk) — on-device AI image generator using a local diffusion backend","devDependencies":{"electron":"^32.3.3"},"main":"main.js","name":"aeonphoto","scripts":{"smoke":"electron . --smoke-test","start":"electron .","test":"node test-backend.js"},"version":"1.0.0"}

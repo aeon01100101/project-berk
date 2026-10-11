@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enigma Launcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">&#9670;</div>
+      <div>
+        <div class="brand-name">ENIGMA</div>
+        <div class="brand-sub">Minecraft Launcher</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <label class="field-inline">
+        <span>Username</span>
+        <input id="username" type="text" maxlength="16" placeholder="Your in-game name" autocomplete="off" />
+      </label>
+      <button id="settingsBtn" class="btn ghost" title="Settings">&#9881;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Choose your Berk</h1>
+      <p>Three whitelisted realms. One offline identity. No Mojang account needed.</p>
+    </section>
+
+    <section id="serverGrid" class="grid"></section>
+
+    <section class="console-wrap">
+      <div class="console-head">
+        <span>Console</span>
+        <div>
+          <button id="clearLog" class="btn tiny ghost">Clear</button>
+          <button id="stopBtn" class="btn tiny danger" disabled>Stop</button>
+        </div>
+      </div>
+      <div id="log" class="console"></div>
+    </section>
+  </main>
+
+  <div id="settingsModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2>Settings</h2>
+        <button id="closeSettings" class="btn ghost">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h3>Launcher</h3>
+        <label class="field"><span>RAM allocation</span>
+          <select id="setRam">
+            <option value="2G">2 GB</option>
+            <option value="4G">4 GB</option>
+            <option value="6G">6 GB</option>
+            <option value="8G">8 GB</option>
+          </select>
+        </label>
+        <label class="field"><span>Game directory <em>(blank = per-server instance)</em></span>
+          <input id="setGameDir" type="text" placeholder="~/.enigma/instances/&lt;server&gt;" />
+        </label>
+        <label class="field"><span>Data directory <em>(blank = default)</em></span>
+          <input id="setDataDir" type="text" placeholder="~/.enigma" />
+        </label>
+        <label class="field"><span>Java 17+ path <em>(blank = auto-detect)</em></span>
+          <input id="setJavaPath" type="text" placeholder="/usr/lib/jvm/.../bin/java" />
+        </label>
+
+        <h3>Servers</h3>
+        <div id="serverFields"></div>
+        <p class="hint">These are private whitelisted servers running with <code>online-mode=false</code>.
+        Enter the real host/IP and port for each realm.</p>
+      </div>
+      <div class="modal-foot">
+        <button id="saveSettings" class="btn primary">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

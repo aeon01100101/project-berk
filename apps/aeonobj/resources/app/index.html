@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AeonObj — Image to 3D</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="window">
+  <div class="title-bar">
+    <span class="tb-icon">◈</span>
+    <span class="tb-title">AeonObj — PNG / web search → textured OBJ</span>
+    <div class="tb-buttons">
+      <button class="tb-btn" id="tb-min" title="Minimize">_</button>
+      <button class="tb-btn" id="tb-max" title="Maximize">□</button>
+      <button class="tb-btn" id="tb-close" title="Close">×</button>
+    </div>
+  </div>
+
+  <div class="window-body">
+    <main>
+      <!-- ============ IMAGE ============ -->
+      <section class="pane" id="image-pane">
+        <h2><span class="step">1</span> Get an image</h2>
+
+        <div id="preview-wrap" class="hidden">
+          <img id="preview" alt="source image">
+          <div id="preview-meta"></div>
+        </div>
+
+        <div class="row">
+          <button id="btn-pick" class="primary">Pick image…</button>
+          <input type="file" id="file-input" accept="image/*" class="hidden">
+        </div>
+
+        <div class="row">
+          <input type="text" id="url-input" placeholder="https://…/image.png">
+          <button id="btn-url">Load URL</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="hint">…or search the web <span class="dim">(Wikimedia Commons, free images)</span></p>
+        <div class="row">
+          <input type="text" id="search-input" placeholder="cat, logo, texture…">
+          <button id="btn-search">Search</button>
+        </div>
+        <div id="search-status" class="status"></div>
+        <div id="results" class="grid"></div>
+      </section>
+
+      <!-- ============ MODEL ============ -->
+      <section class="pane" id="model-pane">
+        <h2><span class="step">2</span> Build the 3D model</h2>
+        <div id="no-image" class="empty">Pick an image first — then come back here.</div>
+
+        <div id="model-controls" class="hidden">
+          <h3>Mesh type</h3>
+          <label class="radio"><input type="radio" name="kind" value="flat"> <b>Flat card</b><span class="dim"> — textured plane</span></label>
+          <label class="radio"><input type="radio" name="kind" value="relief" checked> <b>Relief</b><span class="dim"> — brightness becomes 3D depth</span></label>
+          <label class="radio"><input type="radio" name="kind" value="extrude"> <b>Extruded cutout</b><span class="dim"> — silhouette from transparency</span></label>
+
+          <div id="relief-opts">
+            <div class="slider-row"><label>Depth: <span id="depth-val">0.35</span></label>
+              <input type="range" id="depth" min="0.05" max="1" step="0.01" value="0.35"></div>
+            <div class="slider-row"><label>Detail: <span id="detail-val">128</span></label>
+              <input type="range" id="detail" min="32" max="192" step="8" value="128"></div>
+            <label class="check"><input type="checkbox" id="invert"> Invert height</label>
+            <label class="check"><input type="checkbox" id="from-alpha"> Height from transparency</label>
+          </div>
+
+          <div id="extrude-opts" class="hidden">
+            <div class="slider-row"><label>Thickness: <span id="thick-val">0.25</span></label>
+              <input type="range" id="thick" min="0.05" max="1" step="0.01" value="0.25"></div>
+            <label class="check"><input type="checkbox" id="autorrig" checked> Auto-rig <span class="dim">(Blender script: skeleton → armature)</span></label>
+            <p class="hint">Cuts the silhouette from the alpha channel. Opaque photos become a slab. Holes are capped flat.</p>
+          </div>
+
+          <div class="divider"></div>
+          <div class="row">
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" value="model">
+          </div>
+          <button id="btn-export" class="primary big">Export OBJ…</button>
+          <div id="export-status" class="status"></div>
+
+          <div id="result" class="hidden card">
+            <h3>Done!</h3>
+            <div id="result-stats" class="mono"></div>
+            <div class="row">
+              <button id="btn-reveal">Open folder</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="statusbar">
+      <span class="sb-section">AeonObj v1.0.0</span>
+      <span class="sb-section" id="sb-status">Ready.</span>
+    </div>
+  </div>
+</div>
+
+<script src="mesh.js"></script>
+<script src="renderer.js"></script>
+</body>
+</html>

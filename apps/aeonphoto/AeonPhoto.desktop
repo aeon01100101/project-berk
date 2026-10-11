@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Picture Maker
+Comment=Make pictures
+Exec=/opt/aeonphoto/run.sh
+Icon=/opt/aeonphoto/icon.png
+Terminal=false
+Type=Application
+Categories=Graphics;Photography;
+StartupWMClass=AeonPhoto

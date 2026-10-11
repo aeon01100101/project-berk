@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Music
+Comment=Listen to radio stations
+Exec=sh -c 'exec "$(dirname "$(readlink -f "%k")")/run.sh"'
+Path=
+Terminal=false
+Categories=AudioVideo;Audio;Player;
+Keywords=radio;stream;music;
+StartupNotify=true

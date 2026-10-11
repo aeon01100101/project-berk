@@ -1,0 +1,7 @@
+# Aeon OS Berk first-party APT repo (client entry — install to /etc/apt/sources.list.d/)
+# NOTE: replace the URIs with the real repo URL before distributing.
+Types: deb
+URIs: https://repo.aeon.example/berk
+Suites: berk
+Components: main
+Signed-By: /usr/share/keyrings/aeon-berk-archive-keyring.gpg

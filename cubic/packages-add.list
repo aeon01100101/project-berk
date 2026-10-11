@@ -1,0 +1,11 @@
+# Aeon OS Berk — packages ADDED to stock Linux Mint 22.x
+# Every name below was verified to exist in Ubuntu 24.04 "noble" via apt-cache policy.
+# NOTE: Flatseal is intentionally absent — it is not in the Ubuntu archives.
+# customize.sh installs it from Flathub instead (com.github.tchx84.Flatseal).
+ufw
+apparmor-profiles-extra
+unattended-upgrades
+flatpak
+usbguard
+auditd
+libpam-pwquality

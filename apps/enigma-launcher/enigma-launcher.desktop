@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Minecraft
+Comment=Play Minecraft
+Exec=bash -c 'cd "$(dirname "$(readlink -f "%k")")" && exec ./run.sh %U'
+Terminal=false
+Categories=Game;

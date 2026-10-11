@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Updates
+Comment=Keep everything up to date
+Exec=/opt/berk-updater/berk-updater.py
+Icon=system-software-update
+Terminal=false
+Categories=System;X-Berk-Advanced;
+Keywords=update;updates;upgrade;
+StartupNotify=true
+NoDisplay=false
