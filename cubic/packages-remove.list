@@ -7,3 +7,6 @@ whoopsie
 # Berk, so this goes. Leaf package: nothing in the default install depends
 # on it for boot or for the desktop to run.
 mintinstall
+# The stock Terminal. Berk uses D0S instead (Isaiah, Oct 12 2026).
+# Leaf package on Mint Cinnamon; purge is safe.
+gnome-terminal

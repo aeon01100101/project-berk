@@ -176,8 +176,8 @@ ensure_desktop_category /usr/share/applications/nemo.desktop X-Berk-Files
 # Advanced: the one grown-up area.
 # NOTE: mintinstall (Software Manager) is REMOVED from Berk entirely —
 # the Aeon Store is the one and only app store. It is NOT tagged here.
-for app in /usr/share/applications/gnome-terminal.desktop \
-           /usr/share/applications/cinnamon-settings.desktop \
+# NOTE: gnome-terminal is REMOVED too — Berk uses D0S instead.
+for app in /usr/share/applications/cinnamon-settings.desktop \
            /usr/share/applications/mintupdate.desktop; do
     ensure_desktop_category "$app" X-Berk-Advanced
 done

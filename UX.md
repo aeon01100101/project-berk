@@ -66,10 +66,11 @@ XDG spec — a real, standard mechanism):
 `Game.directory`→Games, `Graphics.directory`→Pictures,
 `Office.directory`→Write. `Files` and `Advanced` are custom categories
 (`X-Berk-Files.directory`, `X-Berk-Advanced.directory`); Nemo is tagged
-`X-Berk-Files`, and Terminal / System Settings / Update
-Manager are tagged `X-Berk-Advanced`, by `apply-ux.sh`. (Mint's Software
-Manager is not tagged — it is removed from Berk entirely; the Aeon Store
-is the one and only app store.)
+`X-Berk-Files`, and System Settings / Update Manager are tagged
+`X-Berk-Advanced`, by `apply-ux.sh`. (Mint's Software Manager is not
+tagged — it is removed from Berk entirely; the Aeon Store is the one and
+only app store. The stock Terminal is likewise removed — Berk uses D0S
+instead.)
 
 Known v1 tradeoff, stated plainly: LibreOffice Calc/Impress appear under
 "Write" alongside Writer. Acceptable for v1; revisit if Isaiah wants them
@@ -158,7 +159,7 @@ completion. `OnlyShowIn=X-Cinnamon;`, `NoDisplay=true`.
 clearly-labeled "Advanced" area, never in the user's face.**
 
 - The application menu has **one** "Advanced" category containing:
-  Terminal, System Settings, Update Manager.
+  D0S, System Settings, Update Manager.
   Everything else the user sees is plain-language (§2).
 - Inside Aeon apps: at most **one** "Advanced" button per app, and the main
   flow must never require it.
