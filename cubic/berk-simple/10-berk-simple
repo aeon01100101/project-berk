@@ -10,8 +10,23 @@ gtk-theme='Mint-Y-Blue'
 icon-theme='Mint-Y-Blue'
 font-name='Noto Sans 12'
 
+# First-party XP "Luna" theme (ships in this repo — no third-party download,
+# so no supply-chain risk). GTK/icons stay Mint-Y-Blue: friendly blue and
+# already stocked; the XP look lives in the Cinnamon shell, window borders,
+# and wallpaper, which is what a 1st grader actually sees.
 [org/cinnamon/theme]
-name='Mint-Y-Blue'
+name='berk-xp'
 
 [org/cinnamon/desktop/wm/preferences]
-theme='Mint-Y-Blue'
+theme='berk-xp'
+
+# Bliss-style wallpaper
+[org/cinnamon/desktop/background]
+picture-uri='file:///usr/share/backgrounds/berk-bliss.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/berk-bliss.jpg'
+picture-options='zoom'
+
+# One bottom panel, ~48px tall, XP taskbar height. '1' is Mint's default
+# bottom panel id; if the id ever differs Cinnamon ignores this harmlessly.
+[org/cinnamon]
+panels-height=['1:48:bottom']

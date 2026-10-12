@@ -1,0 +1,252 @@
+/* ==========================================================================
+ * berk-xp — Windows XP "Luna" style Cinnamon theme for Aeon OS Berk.
+ * First-party theme (ships in this repo, installed by apply-ux.sh).
+ * No third-party downloads: no supply-chain risk.
+ *
+ * Targets the parts of the desktop a 1st grader actually sees:
+ *   the taskbar (panel), the green Start button (menu applet),
+ *   window buttons in the taskbar, and the Start menu popup.
+ * ========================================================================== */
+
+/* ---- the XP taskbar: Luna blue, bright band at top ---- */
+#panel {
+    background-gradient-direction: vertical;
+    background-gradient-start: #3f8cf3;
+    background-gradient-end: #1740a0;
+    border-top-width: 0px;
+    font-weight: bold;
+    color: #ffffff;
+    height: 48px;
+}
+
+#panelLeft, #panelCenter, #panelRight {
+    spacing: 4px;
+}
+
+/* ---- applets in general: white text, soft hover ---- */
+.applet-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+}
+.applet-box:hover {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255, 255, 255, 0.28);
+    background-gradient-end: rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+}
+.applet-label {
+    font-weight: bold;
+    color: #ffffff;
+}
+.applet-icon {
+    icon-size: 26px;
+}
+
+/* ---- the green Start button: first applet on the left (the menu) ---- */
+#panelLeft .applet-box:first-child {
+    background-gradient-direction: vertical;
+    background-gradient-start: #69b364;
+    background-gradient-end: #2e7a2c;
+    border-radius: 0px 16px 18px 0px;
+    padding-left: 14px;
+    padding-right: 26px;
+    margin-right: 6px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 15pt;
+    color: #ffffff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.55);
+    box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.45);
+}
+#panelLeft .applet-box:first-child:hover {
+    background-gradient-start: #7cc47a;
+    background-gradient-end: #359234;
+}
+#panelLeft .applet-box:first-child:active {
+    background-gradient-start: #2e7a2c;
+    background-gradient-end: #69b364;
+}
+
+/* ---- window list: XP-style task buttons ---- */
+.window-list-box {
+    spacing: 6px;
+}
+.window-list-item-box {
+    background-gradient-direction: vertical;
+    background-gradient-start: #5a9cf6;
+    background-gradient-end: #2b5fc4;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 7px;
+    color: #ffffff;
+    font-weight: bold;
+    spacing: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.window-list-item-box:hover {
+    background-gradient-start: #79b3f8;
+    background-gradient-end: #3a70d4;
+}
+.window-list-item-box:active,
+.window-list-item-box:checked,
+.window-list-item-box:focus {
+    background-gradient-direction: vertical;
+    background-gradient-start: #1e4fa8;
+    background-gradient-end: #163a80;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.window-list-item-label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* ---- the Start menu popup: white body, XP blue highlights ---- */
+.menu {
+    background-color: #ffffff;
+    border: 2px solid #0831d9;
+    border-radius: 8px 8px 0px 0px;
+    color: #000000;
+    padding: 6px;
+}
+.menu-favorites-box {
+    background-gradient-direction: vertical;
+    background-gradient-start: #4a90f7;
+    background-gradient-end: #1c4fd6;
+    border-radius: 6px;
+    padding: 8px;
+}
+.menu-favorites-button {
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+}
+.menu-favorites-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.menu-applications-inner-box,
+.menu-applications-outer-box {
+    padding: 6px;
+}
+.menu-application-button,
+.menu-category-button {
+    color: #000000;
+    border-radius: 5px;
+    padding: 7px;
+}
+.menu-application-button-selected,
+.menu-category-button-selected {
+    background-gradient-direction: vertical;
+    background-gradient-start: #3d7be0;
+    background-gradient-end: #2b5fc4;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.menu-application-button-label,
+.menu-category-button-label {
+    font-size: 10.5pt;
+}
+#menu-search-entry {
+    border: 2px solid #7f9db9;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000000;
+    selection-background-color: #316ac5;
+    selected-color: #ffffff;
+    padding: 6px;
+    font-size: 11pt;
+}
+
+/* ---- calendar / clock popup ---- */
+.calendar {
+    background-color: #ffffff;
+    border: 2px solid #0831d9;
+    border-radius: 8px;
+    color: #000000;
+    padding: 10px;
+}
+.datemenu-date-label {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #0b3d91;
+}
+.calendar-day-base {
+    border-radius: 5px;
+}
+.calendar-today {
+    background-gradient-direction: vertical;
+    background-gradient-start: #ff9a3d;
+    background-gradient-end: #e0662a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* ---- notifications: XP balloon-tip style ---- */
+.notification-banner,
+.notification {
+    background-color: #ffffe1;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    color: #000000;
+    padding: 10px;
+}
+.notification-button {
+    background-gradient-direction: vertical;
+    background-gradient-start: #ffffff;
+    background-gradient-end: #ece9d8;
+    border: 1px solid #003c74;
+    border-radius: 5px;
+    color: #000000;
+    padding: 6px 12px;
+}
+
+/* ---- on-screen display (volume/brightness) ---- */
+.osd-window {
+    background-color: rgba(8, 49, 217, 0.92);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 14px;
+}
+
+/* ---- expo / overview workspace switcher ---- */
+.expo-workspace-thumbnail-frame {
+    border: 3px solid #0831d9;
+    border-radius: 6px;
+}
+.expo-workspaces-name-entry {
+    background-color: #ffffff;
+    border: 2px solid #0831d9;
+    border-radius: 6px;
+    color: #000000;
+    selection-background-color: #316ac5;
+    padding: 6px;
+}
+
+/* ---- run dialog (Alt+F2) ---- */
+.run-dialog {
+    background-color: #ece9d8;
+    border: 2px solid #0831d9;
+    border-radius: 8px;
+    padding: 12px;
+    color: #000000;
+}
+.run-dialog-entry {
+    background-color: #ffffff;
+    border: 2px solid #7f9db9;
+    border-radius: 5px;
+    color: #000000;
+    padding: 6px;
+}
+
+/* ---- desktop: big friendly icon labels ---- */
+.window-caption {
+    background-color: rgba(8, 49, 217, 0.85);
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 10pt;
+    padding: 4px 8px;
+    spacing: 4px;
+}

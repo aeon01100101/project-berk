@@ -67,6 +67,25 @@ install_file() {
     log "installed $dest"
 }
 
+# install_tree <src-dir> <dest-dir>: copy only when the tree differs.
+install_tree() {
+    local src="$1" dest="$2"
+    [[ -d "$src" ]] || { warn "source dir missing: $src (skipping)"; return 0; }
+    if [[ -d "$dest" ]] && diff -r -q "$src" "$dest" >/dev/null 2>&1; then
+        log "unchanged: $dest"
+        return 0
+    fi
+    if [[ $DRY_RUN -eq 1 ]]; then
+        log "[dry-run] would install tree $dest"
+        return 0
+    fi
+    backup_file "$dest"
+    mkdir -p "$(dirname "$dest")"
+    rm -rf "$dest"
+    cp -a "$src" "$dest"
+    log "installed tree $dest"
+}
+
 # ensure_desktop_category <desktop-file> <category>: add Category if absent.
 ensure_desktop_category() {
     local desktop="$1" category="$2"
@@ -135,6 +154,11 @@ else
     log "no cinnamon-ux.dconf capture present (produced during first reference build — see CUBIC.md)"
 fi
 run dconf update || warn "'dconf update' failed"
+
+# ------------------------------------------------------ berk-xp theme --
+log "== berk-xp XP theme + wallpaper =="
+install_tree "$UX_DIR/berk-xp" /usr/share/themes/berk-xp
+install_file "$UX_DIR/wallpapers/berk-bliss.jpg" /usr/share/backgrounds/berk-bliss.jpg 0644
 
 # ------------------------------------------------------ 2. start orb --
 log "== start button icon =="

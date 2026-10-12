@@ -19,19 +19,24 @@ packaging, or captured during the first test-VM build (documented in
 - **Large icons** everywhere: panel launchers, desktop, and menu.
 - **Window list** on the panel (big task buttons, XP-style), system tray and
   clock bottom-right. Nothing else on the panel.
-- **Theme (XP-inspired, closest stock match):**
-  - GTK theme: `Mint-Y-Blue`
+- **Theme: first-party XP "Luna" (`berk-xp`), bright Little Tikes colors:**
+  - Cinnamon desktop theme: `berk-xp` — Luna-blue taskbar, green Start
+    button, XP-style task buttons and Start menu
+  - Window borders: `berk-xp` — Luna-blue gradient titlebars, red close
+    button
+  - Wallpaper: `berk-bliss.jpg` — Bliss-style green hill under blue sky
+  - GTK theme: `Mint-Y-Blue` (unchanged — friendly blue, already stocked;
+    the XP look lives in the shell, window borders, and wallpaper, which is
+    what a 1st grader actually sees)
   - Icon theme: `Mint-Y-Blue`
-  - Cinnamon desktop theme: `Mint-Y-Blue`
-  - Window borders: `Mint-Y-Blue`
   - UI font: `Noto Sans 12`
-  
-  Why this one: Mint-Y-Blue is the closest stock Mint/Cinnamon look to the
-  XP feel — blue title bars and accents, rounded friendly widgets — with zero
-  third-party theme downloads (third-party themes are a supply-chain and
-  maintenance risk). Applied system-wide via dconf in
-  `cubic/berk-simple/10-berk-simple`. Verified visually in the test VM
-  (CUBIC.md step 4); if it doesn't read "friendly blue", that's a build
+
+  Why first-party: a theme shipped in this repo
+  (`cubic/berk-simple/berk-xp/`) has no third-party download and no
+  supply-chain risk — unlike fetching an XP theme off the internet.
+  Applied system-wide via dconf in `cubic/berk-simple/10-berk-simple`,
+  installed by `apply-ux.sh`. Verified visually in the test VM
+  (CUBIC.md step 4); if it doesn't read "Windows XP", that's a build
   blocker, not a shrug.
 - **Readable + high contrast by default:** 12pt UI font minimum, large
   targets. Cinnamon's Accessibility → High Contrast remains available under

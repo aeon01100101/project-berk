@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<!-- berk-xp metacity theme: Windows XP "Luna" style window borders.
+     First-party theme for Aeon OS Berk. Draw ops use relative coordinates
+     (width/height) so buttons scale with the titlebar. -->
+<metacity_theme>
+  <info>
+    <name>Berk XP</name>
+    <author>Aeon OS Berk</author>
+    <copyright>2026, Aeon OS Berk project</copyright>
+    <date>2026-10-12</date>
+    <description>Windows XP Luna style window frames: blue gradient titlebar, red close button.</description>
+  </info>
+
+  <frame_geometry name="berk_xp" title_scale="medium"
+                  rounded_top_left="true" rounded_top_right="true"
+                  rounded_bottom_left="false" rounded_bottom_right="false">
+    <distance name="left_width" value="4"/>
+    <distance name="right_width" value="4"/>
+    <distance name="bottom_height" value="4"/>
+    <distance name="left_titlebar_edge" value="4"/>
+    <distance name="right_titlebar_edge" value="4"/>
+    <distance name="title_vertical_pad" value="6"/>
+    <border name="title_border" left="10" right="10" top="2" bottom="2"/>
+    <border name="button_border" left="2" right="2" top="3" bottom="3"/>
+    <aspect_ratio name="button" value="1.0"/>
+  </frame_geometry>
+
+  <draw_ops>
+    <!-- ===== titlebar backgrounds ===== -->
+    <draw_op name="titlebar_active">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#4a9bff"/>
+        <color value="#0d5ce6"/>
+      </gradient>
+      <line color="#bcdcff" x1="0" y1="0" x2="width" y2="0" width="2"/>
+      <line color="#0a3fa0" x1="0" y1="height - 1" x2="width" y2="height - 1" width="1"/>
+    </draw_op>
+
+    <draw_op name="titlebar_inactive">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#c3cfe8"/>
+        <color value="#93a5cc"/>
+      </gradient>
+      <line color="#e8eefc" x1="0" y1="0" x2="width" y2="0" width="2"/>
+    </draw_op>
+
+    <draw_op name="frame_edge_active">
+      <rectangle color="#1a46b8" x="0" y="0" width="width" height="height" filled="true"/>
+    </draw_op>
+
+    <draw_op name="frame_edge_inactive">
+      <rectangle color="#7f93bd" x="0" y="0" width="width" height="height" filled="true"/>
+    </draw_op>
+
+    <!-- ===== title text ===== -->
+    <draw_op name="title_text_active">
+      <title color="#ffffff" x="0" y="0"/>
+    </draw_op>
+
+    <draw_op name="title_text_inactive">
+      <title color="#3a4a6a" x="0" y="0"/>
+    </draw_op>
+
+    <draw_op name="window_icon">
+      <icon alpha="255" x="0" y="0" width="16" height="16"/>
+    </draw_op>
+
+    <!-- ===== blue button backgrounds (min/max/menu) ===== -->
+    <draw_op name="btn_blue">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#6aa5f7"/>
+        <color value="#1c4fd6"/>
+      </gradient>
+      <rectangle color="#d6e6ff" x="0" y="0" width="width" height="height" filled="false"/>
+    </draw_op>
+
+    <draw_op name="btn_blue_prelight">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#8dbcff"/>
+        <color value="#2b5fe0"/>
+      </gradient>
+      <rectangle color="#ffffff" x="0" y="0" width="width" height="height" filled="false"/>
+    </draw_op>
+
+    <draw_op name="btn_blue_pressed">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#1c4fd6"/>
+        <color value="#6aa5f7"/>
+      </gradient>
+      <rectangle color="#0a2f80" x="0" y="0" width="width" height="height" filled="false"/>
+    </draw_op>
+
+    <!-- ===== red close button backgrounds ===== -->
+    <draw_op name="btn_red">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#f5a184"/>
+        <color value="#c93a12"/>
+      </gradient>
+      <rectangle color="#ffd9c4" x="0" y="0" width="width" height="height" filled="false"/>
+    </draw_op>
+
+    <draw_op name="btn_red_prelight">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#ffb894"/>
+        <color value="#e04e1e"/>
+      </gradient>
+      <rectangle color="#ffffff" x="0" y="0" width="width" height="height" filled="false"/>
+    </draw_op>
+
+    <draw_op name="btn_red_pressed">
+      <gradient type="vertical" x="0" y="0" width="width" height="height">
+        <color value="#c93a12"/>
+        <color value="#f5a184"/>
+      </gradient>
+      <rectangle color="#7a2208" x="0" y="0" width="width" height="height" filled="false"/>
+    </draw_op>
+
+    <!-- ===== glyphs (white) ===== -->
+    <draw_op name="glyph_min">
+      <line color="#ffffff" x1="5" y1="height - 6" x2="width - 5" y2="height - 6" width="3"/>
+    </draw_op>
+
+    <draw_op name="glyph_max">
+      <rectangle color="#ffffff" x="5" y="4" width="width - 10" height="height - 9" filled="false"/>
+      <line color="#ffffff" x1="5" y1="6" x2="width - 5" y2="6" width="3"/>
+    </draw_op>
+
+    <draw_op name="glyph_close">
+      <line color="#ffffff" x1="6" y1="6" x2="width - 6" y2="height - 6" width="3"/>
+      <line color="#ffffff" x1="width - 6" y1="6" x2="6" y2="height - 6" width="3"/>
+    </draw_op>
+
+    <draw_op name="glyph_menu">
+      <rectangle color="#ffffff" x="width / 2 - 5" y="height / 2 - 5" width="10" height="10" filled="true"/>
+    </draw_op>
+
+    <!-- ===== composited buttons ===== -->
+    <draw_op name="close_normal"><include name="btn_red"/><include name="glyph_close"/></draw_op>
+    <draw_op name="close_prelight"><include name="btn_red_prelight"/><include name="glyph_close"/></draw_op>
+    <draw_op name="close_pressed"><include name="btn_red_pressed"/><include name="glyph_close"/></draw_op>
+
+    <draw_op name="min_normal"><include name="btn_blue"/><include name="glyph_min"/></draw_op>
+    <draw_op name="min_prelight"><include name="btn_blue_prelight"/><include name="glyph_min"/></draw_op>
+    <draw_op name="min_pressed"><include name="btn_blue_pressed"/><include name="glyph_min"/></draw_op>
+
+    <draw_op name="max_normal"><include name="btn_blue"/><include name="glyph_max"/></draw_op>
+    <draw_op name="max_prelight"><include name="btn_blue_prelight"/><include name="glyph_max"/></draw_op>
+    <draw_op name="max_pressed"><include name="btn_blue_pressed"/><include name="glyph_max"/></draw_op>
+
+    <draw_op name="menu_normal"><include name="btn_blue"/><include name="glyph_menu"/></draw_op>
+    <draw_op name="menu_prelight"><include name="btn_blue_prelight"/><include name="glyph_menu"/></draw_op>
+    <draw_op name="menu_pressed"><include name="btn_blue_pressed"/><include name="glyph_menu"/></draw_op>
+  </draw_ops>
+
+  <!-- ===== focused frame ===== -->
+  <frame_style name="berk_xp_focused" geometry="berk_xp">
+    <piece position="entire_background" draw_ops="frame_edge_active"/>
+    <piece position="titlebar" draw_ops="titlebar_active"/>
+    <piece position="title" draw_ops="title_text_active"/>
+    <piece position="titlebar_middle" draw_ops="titlebar_active"/>
+    <piece position="left_edge" draw_ops="frame_edge_active"/>
+    <piece position="right_edge" draw_ops="frame_edge_active"/>
+    <piece position="bottom_edge" draw_ops="frame_edge_active"/>
+    <button function="close" state="normal" draw_ops="close_normal"/>
+    <button function="close" state="prelight" draw_ops="close_prelight"/>
+    <button function="close" state="pressed" draw_ops="close_pressed"/>
+    <button function="maximize" state="normal" draw_ops="max_normal"/>
+    <button function="maximize" state="prelight" draw_ops="max_prelight"/>
+    <button function="maximize" state="pressed" draw_ops="max_pressed"/>
+    <button function="minimize" state="normal" draw_ops="min_normal"/>
+    <button function="minimize" state="prelight" draw_ops="min_prelight"/>
+    <button function="minimize" state="pressed" draw_ops="min_pressed"/>
+    <button function="menu" state="normal" draw_ops="menu_normal"/>
+    <button function="menu" state="prelight" draw_ops="menu_prelight"/>
+    <button function="menu" state="pressed" draw_ops="menu_pressed"/>
+    <button function="shade" state="normal" draw_ops="min_normal"/>
+    <button function="shade" state="prelight" draw_ops="min_prelight"/>
+    <button function="shade" state="pressed" draw_ops="min_pressed"/>
+    <button function="above" state="normal" draw_ops="max_normal"/>
+    <button function="above" state="prelight" draw_ops="max_prelight"/>
+    <button function="above" state="pressed" draw_ops="max_pressed"/>
+    <button function="stick" state="normal" draw_ops="max_normal"/>
+    <button function="stick" state="prelight" draw_ops="max_prelight"/>
+    <button function="stick" state="pressed" draw_ops="max_pressed"/>
+    <button function="unshade" state="normal" draw_ops="min_normal"/>
+    <button function="unshade" state="prelight" draw_ops="min_prelight"/>
+    <button function="unshade" state="pressed" draw_ops="min_pressed"/>
+    <button function="unabove" state="normal" draw_ops="max_normal"/>
+    <button function="unabove" state="prelight" draw_ops="max_prelight"/>
+    <button function="unabove" state="pressed" draw_ops="max_pressed"/>
+    <button function="unstick" state="normal" draw_ops="max_normal"/>
+    <button function="unstick" state="prelight" draw_ops="max_prelight"/>
+    <button function="unstick" state="pressed" draw_ops="max_pressed"/>
+  </frame_style>
+
+  <!-- ===== unfocused frame ===== -->
+  <frame_style name="berk_xp_unfocused" geometry="berk_xp">
+    <piece position="entire_background" draw_ops="frame_edge_inactive"/>
+    <piece position="titlebar" draw_ops="titlebar_inactive"/>
+    <piece position="title" draw_ops="title_text_inactive"/>
+    <piece position="titlebar_middle" draw_ops="titlebar_inactive"/>
+    <piece position="left_edge" draw_ops="frame_edge_inactive"/>
+    <piece position="right_edge" draw_ops="frame_edge_inactive"/>
+    <piece position="bottom_edge" draw_ops="frame_edge_inactive"/>
+    <button function="close" state="normal" draw_ops="close_normal"/>
+    <button function="close" state="prelight" draw_ops="close_prelight"/>
+    <button function="close" state="pressed" draw_ops="close_pressed"/>
+    <button function="maximize" state="normal" draw_ops="max_normal"/>
+    <button function="maximize" state="prelight" draw_ops="max_prelight"/>
+    <button function="maximize" state="pressed" draw_ops="max_pressed"/>
+    <button function="minimize" state="normal" draw_ops="min_normal"/>
+    <button function="minimize" state="prelight" draw_ops="min_prelight"/>
+    <button function="minimize" state="pressed" draw_ops="min_pressed"/>
+    <button function="menu" state="normal" draw_ops="menu_normal"/>
+    <button function="menu" state="prelight" draw_ops="menu_prelight"/>
+    <button function="menu" state="pressed" draw_ops="menu_pressed"/>
+    <button function="shade" state="normal" draw_ops="min_normal"/>
+    <button function="shade" state="prelight" draw_ops="min_prelight"/>
+    <button function="shade" state="pressed" draw_ops="min_pressed"/>
+    <button function="above" state="normal" draw_ops="max_normal"/>
+    <button function="above" state="prelight" draw_ops="max_prelight"/>
+    <button function="above" state="pressed" draw_ops="max_pressed"/>
+    <button function="stick" state="normal" draw_ops="max_normal"/>
+    <button function="stick" state="prelight" draw_ops="max_prelight"/>
+    <button function="stick" state="pressed" draw_ops="max_pressed"/>
+    <button function="unshade" state="normal" draw_ops="min_normal"/>
+    <button function="unshade" state="prelight" draw_ops="min_prelight"/>
+    <button function="unshade" state="pressed" draw_ops="min_pressed"/>
+    <button function="unabove" state="normal" draw_ops="max_normal"/>
+    <button function="unabove" state="prelight" draw_ops="max_prelight"/>
+    <button function="unabove" state="pressed" draw_ops="max_pressed"/>
+    <button function="unstick" state="normal" draw_ops="max_normal"/>
+    <button function="unstick" state="prelight" draw_ops="max_prelight"/>
+    <button function="unstick" state="pressed" draw_ops="max_pressed"/>
+  </frame_style>
+
+  <frame_style_set name="normal">
+    <frame focus="yes" state="normal" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="normal" resize="both" style="berk_xp_unfocused"/>
+    <frame focus="yes" state="maximized" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="maximized" resize="both" style="berk_xp_unfocused"/>
+    <frame focus="yes" state="shaded" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="shaded" resize="both" style="berk_xp_unfocused"/>
+    <frame focus="yes" state="maximized_and_shaded" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="maximized_and_shaded" resize="both" style="berk_xp_unfocused"/>
+  </frame_style_set>
+
+  <frame_style_set name="dialog">
+    <frame focus="yes" state="normal" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="normal" resize="both" style="berk_xp_unfocused"/>
+    <frame focus="yes" state="maximized" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="maximized" resize="both" style="berk_xp_unfocused"/>
+  </frame_style_set>
+
+  <frame_style_set name="modal_dialog">
+    <frame focus="yes" state="normal" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="normal" resize="both" style="berk_xp_unfocused"/>
+  </frame_style_set>
+
+  <frame_style_set name="utility">
+    <frame focus="yes" state="normal" resize="both" style="berk_xp_focused"/>
+    <frame focus="no" state="normal" resize="both" style="berk_xp_unfocused"/>
+  </frame_style_set>
+
+  <window type="normal" style_set="normal"/>
+  <window type="dialog" style_set="dialog"/>
+  <window type="modal_dialog" style_set="modal_dialog"/>
+  <window type="utility" style_set="utility"/>
+  <window type="toolbar" style_set="normal"/>
+  <window type="menu" style_set="normal"/>
+  <window type="splashscreen" style_set="normal"/>
+</metacity_theme>

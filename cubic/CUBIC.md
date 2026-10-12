@@ -100,11 +100,12 @@ installed systems keep them via `update-grub`.)
    - After install + reboot, verify: `sudo ufw status` (active, deny
      incoming), `sudo aa-status` (profiles in enforce), `resolvectl status`
      (DNSOverTLS=yes, Quad9), `sysctl kernel.kptr_restrict` (= 2).
-   - **UX verification (UX.md §6):** single bottom panel; Start button
-     labeled `start` with the green orb; Mint-Y-Blue theme; menu shows
-     Internet / Music / Games / Pictures / Write / Files / Advanced and
-     nothing technical; Aeon apps appear under their plain-language names.
-     If any of this is wrong, it's a build blocker — fix and rebuild.
+   - **UX verification (UX.md §6):** single bottom panel (~48px, XP-blue
+     taskbar); Start button labeled `start` with the green orb; berk-xp
+     XP theme (blue titlebars, red close button); Bliss wallpaper; menu
+     shows Internet / Music / Games / Pictures / Write / Files / Advanced
+     and nothing technical; Aeon apps appear under their plain-language
+     names. If any of this is wrong, it's a build blocker — fix and rebuild.
 3. Only then write it to USB (e.g. balenaEtcher, or `dd`) for bare metal.
 
 ## 5. Notes
