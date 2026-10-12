@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Aeon Store
+Comment=Get more apps
+Exec=/opt/aeon-store/aeon-store.py
+Icon=/opt/aeon-store/store-bag.svg
+Terminal=false
+Categories=System;
+StartupNotify=true

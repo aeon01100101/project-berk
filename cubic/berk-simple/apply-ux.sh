@@ -173,10 +173,11 @@ for d in "$UX_DIR"/desktop-directories/*.directory; do
 done
 # Files: Nemo goes under "Files"
 ensure_desktop_category /usr/share/applications/nemo.desktop X-Berk-Files
-# Advanced: the one grown-up area
+# Advanced: the one grown-up area.
+# NOTE: mintinstall (Software Manager) is REMOVED from Berk entirely —
+# the Aeon Store is the one and only app store. It is NOT tagged here.
 for app in /usr/share/applications/gnome-terminal.desktop \
            /usr/share/applications/cinnamon-settings.desktop \
-           /usr/share/applications/mintinstall.desktop \
            /usr/share/applications/mintupdate.desktop; do
     ensure_desktop_category "$app" X-Berk-Advanced
 done
@@ -193,6 +194,7 @@ set_desktop_names "aeontv"       "TV"           "Watch TV shows"
 set_desktop_names "classic"      "Cable TV"     "Watch cable TV"
 set_desktop_names "quietbrowse"  "Internet"     "Browse the web"
 set_desktop_names "aeonai"       "Assistant"    "Ask questions, get help"
+set_desktop_names "aeon-store"   "Aeon Store"   "Get more apps"
 
 log "done."
 [[ $DRY_RUN -eq 0 ]] && log "Backups (if anything changed): $BACKUP_DIR"

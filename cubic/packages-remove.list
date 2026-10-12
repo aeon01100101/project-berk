@@ -3,3 +3,7 @@
 # on a desktop (nothing in the default Mint install depends on them for boot).
 apport
 whoopsie
+# Mint's Software Manager. The Aeon Store is the one and only app store on
+# Berk, so this goes. Leaf package: nothing in the default install depends
+# on it for boot or for the desktop to run.
+mintinstall

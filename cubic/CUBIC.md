@@ -49,11 +49,15 @@ chmod +x /tmp/aeonos-berk/cubic/customize.sh
 `customize.sh` does, in order:
 1. `apt-get update`
 2. Installs everything in `packages-add.list`, purges `packages-remove.list`
+   (this is where Mint's Software Manager is removed — the Aeon Store is
+   the one and only app store on Berk)
 3. Runs `scripts/harden-mint.sh --in-chroot --force` (the full Berk
    baseline; live service restarts are skipped — they apply on first boot)
-4. Adds the Flathub remote and installs **Flatseal**
+4. Runs `berk-simple/apply-ux.sh` (the XP desktop per `UX.md`), then builds
+   and installs the **Aeon Store** `.deb` (`store/make-store-deb.sh`)
+5. Adds the Flathub remote and installs **Flatseal**
    (`com.github.tchx84.Flatseal` — not in the Ubuntu archives, hence Flatpak)
-5. `apt-get autoremove` + `clean`
+6. `apt-get autoremove` + `clean`
 
 If the Flatseal step fails (no network in the chroot), it prints a
 fallback one-liner to run after first boot. Everything else must succeed —
