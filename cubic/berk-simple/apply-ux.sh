@@ -178,7 +178,8 @@ ensure_desktop_category /usr/share/applications/nemo.desktop X-Berk-Files
 # the Aeon Store is the one and only app store. It is NOT tagged here.
 # NOTE: gnome-terminal is REMOVED too — Berk uses D0S instead.
 for app in /usr/share/applications/cinnamon-settings.desktop \
-           /usr/share/applications/mintupdate.desktop; do
+           /usr/share/applications/mintupdate.desktop \
+           /usr/share/applications/berk-d0s.desktop; do
     ensure_desktop_category "$app" X-Berk-Advanced
 done
 
@@ -195,6 +196,7 @@ set_desktop_names "classic"      "Cable TV"     "Watch cable TV"
 set_desktop_names "quietbrowse"  "Internet"     "Browse the web"
 set_desktop_names "aeonai"       "Assistant"    "Ask questions, get help"
 set_desktop_names "aeon-store"   "Aeon Store"   "Get more apps"
+set_desktop_names "d0s"          "D0S"          "Type commands"
 
 log "done."
 [[ $DRY_RUN -eq 0 ]] && log "Backups (if anything changed): $BACKUP_DIR"

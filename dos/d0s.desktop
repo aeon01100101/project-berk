@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=D0S
+Comment=Type commands
+Exec=/opt/d0s/d0s.py
+Icon=/opt/d0s/d0s.svg
+Terminal=false
+Categories=System;
+StartupNotify=true

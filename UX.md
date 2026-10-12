@@ -97,6 +97,7 @@ sees them.
 | Berk updater | **Updates** | Keep everything up to date |
 | AeonAI | **Assistant** | Ask questions, get help |
 | Aeon Store | **Aeon Store** | Get more apps |
+| D0S | **D0S** | Type commands |
 | Sovereign Essentials | *(no desktop entry — Minecraft server mod)* | — |
 
 > **The Aeon Store is the one and only app store on Berk.** Mint's Software

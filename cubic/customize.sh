@@ -48,6 +48,10 @@ log "building + installing the Aeon Store (the one and only app store)..."
 bash "$SCRIPT_DIR/../store/make-store-deb.sh" 1.0.0 --out /tmp
 dpkg -i /tmp/aeon-store_1.0.0_amd64.deb
 
+log "building + installing D0S (the DOS-style terminal)..."
+bash "$SCRIPT_DIR/../dos/make-dos-deb.sh" 1.0.0 --out /tmp
+dpkg -i /tmp/d0s_1.0.0_amd64.deb
+
 log "adding Flathub remote (system)..."
 if flatpak remote-list --system 2>/dev/null | grep -q '^flathub'; then
     log "flathub remote already present"
